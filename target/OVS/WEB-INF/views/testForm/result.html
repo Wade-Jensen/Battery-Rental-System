@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Build Plan Review</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Result</h1>
+    
+    <p th:text="'buildPlanId: ' + ${buildPlan.buildPlanId}" >
+    <p th:text="'planName: ' + ${buildPlan.planName}" >
+    <p th:text="'planNote: ' + ${buildPlan.note}" >
+    <p th:text="'buildOwner: ' + ${testForm.builder.userName}" >
+    <p th:text="'project: ' + ${buildPlan.project.name}" >
+    <p th:text="'planName: ' + ${buildPlan.project.company.fullName}" >
+    <p th:text="'dateCreated: ' + ${{buildPlan.dateCreated}}" >
+    <p th:text="'estStartupYear: ' + ${buildPlan.estStartupYear}" />
+    <p th:text="'capCost: ' + ${buildPlan.capCost}" />
+    <p th:text="'tradingCurrency: ' + ${buildPlan.tradingCurrency}" />
+    <p th:text="'taxRate: ' + ${buildPlan.taxRate}" />
+    <p th:text="'mineLife: ' + ${buildPlan.mineLife}" />
+    <p th:text="'miningCost: ' + ${buildPlan.miningCost}" />
+    <p th:text="'miningRate: ' + ${buildPlan.miningRate}" />
+    <p th:text="'stripRate: ' + ${buildPlan.stripRate}" />
+    <p th:text="'tonnage: ' + ${buildPlan.tonnage}" />
+    
+    
+    <a href="/buildPlan">Submit another message</a>
+    
+    <!-- 
+    
+    
+    
+    
+     -->
+    
+</body>
+</html>

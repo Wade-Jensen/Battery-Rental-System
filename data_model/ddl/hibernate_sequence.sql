@@ -1,0 +1,10 @@
+CREATE SEQUENCE hibernate_sequence
+INCREMENT 1
+MINVALUE 1
+MAXVALUE 9223372036854775807  -- maximum possible
+START 1  
+CACHE 20
+NO CYCLE;
+
+ALTER TABLE public.hibernate_sequence
+  OWNER TO ovs;

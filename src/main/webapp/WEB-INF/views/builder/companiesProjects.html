@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"	xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4"
+		layout:decorator="layouts/dashboardLayout" lang="en-us"> 
+
+<head>
+	<title>Companies and Projects</title>
+</head>
+
+<!-- NOTE THESE ARE DELIBERATLY NOT INSIDE THE <HEAD> SECTION AS IT CAUSES MERGING ISSUES WITH THYMELEAF -->
+<!-- #CSS Links -->
+<!-- Basic Styles -->
+<link rel="stylesheet" type="text/css" media="screen" href="../../../css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}">
+<link rel="stylesheet" type="text/css" media="screen" href="../../../css/font-awesome.min.css" th:href="@{/css/font-awesome.min.css}">
+
+<!-- SmartAdmin Styles : Caution! DO NOT change the order -->
+<link rel="stylesheet" type="text/css" media="screen" href="../../../css/smartadmin-production-plugins.min.css" th:href="@{/css/smartadmin-production-plugins.min.css}">
+<link rel="stylesheet" type="text/css" media="screen" href="../../../css/smartadmin-production.min.css" th:href="@{/css/smartadmin-production.min.css}">
+<link rel="stylesheet" type="text/css" media="screen" href="../../../css/smartadmin-skins.min.css" th:href="@{/css/smartadmin-skins.min.css}">
+
+<!-- SmartAdmin RTL Support -->	
+<link rel="stylesheet" type="text/css" media="screen" href="../../../css/smartadmin-rtl.min.css" th:href="@{/css/smartadmin-rtl.min.css}"> 
+
+<!-- #FAVICONS -->
+<link rel="shortcut icon" href="../../../img/favicon/favicon.ico" th:href="@{/img/favicon/favicon.ico}" type="image/x-icon">
+<link rel="icon" href="../../../img/favicon/favicon.ico" th:href="@{/img/favicon/favicon.ico}" type="image/x-icon">
+
+<!-- #GOOGLE FONT -->
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700">
+
+<body>
+	<div th:replace="fragments :: page-title(page-name-major='Companies', page-name-minor='Projects')"></div>
+
+	<div layout:fragment="content">
+
+					<!-- widget grid -->
+					<section id="widget-grid" class="">			
+				
+						<!-- row -->
+						<div class="row">
+										
+							<!-- NEW WIDGET START -->
+							<article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+	
+							<!-- Widget ID (each widget will need unique ID)-->
+							<div class="jarviswidget jarviswidget-color-blueDark" id="wid-id-1" data-widget-editbutton="false">
+								<!-- widget options:
+								usage: <div class="jarviswidget" id="wid-id-0" data-widget-editbutton="false">
+				
+								data-widget-colorbutton="false"
+								data-widget-editbutton="false"
+								data-widget-togglebutton="false"
+								data-widget-deletebutton="false"
+								data-widget-fullscreenbutton="false"
+								data-widget-custombutton="false"
+								data-widget-collapsed="true"
+								data-widget-sortable="false"
+				
+								-->
+								<header>
+									<span class="widget-icon"> <i class="fa fa-table"></i> </span>
+									<h2>Please select a project </h2>
+				
+								</header>
+				
+								<!-- widget div-->
+								<div>
+				
+									<!-- widget edit box -->
+									<div class="jarviswidget-editbox">
+										<!-- This area used as dropdown edit box -->
+				
+									</div>
+									<!-- end widget edit box -->
+				
+									<!-- widget content -->
+									<div class="widget-body no-padding">
+				
+										<table id="datatable_fixed_column" class="table table-striped table-bordered" width="100%">
+					
+									        <thead>
+												<tr>
+													<th class="hasinput" style="width:9%">
+														<input type="text" class="form-control" placeholder="Filter =" />
+													</th>
+													<th class="hasinput" style="width:9%">
+														<input type="text" class="form-control" placeholder="Filter =" />
+													</th>
+													<th class="hasinput" style="width:9%">
+														<input type="text" class="form-control" placeholder="Filter =" />
+													</th>
+													<th class="hasinput" style="width:9%">
+														<input type="text" class="form-control" placeholder="Filter =" />
+													</th>
+													<th class="hasinput" style="width:9%">
+														<input type="text" class="form-control" placeholder="Filter =" />
+													</th>
+													<th class="hasinput" style="width:9%">
+														<input type="text" class="form-control" placeholder="Filter =" />
+													</th>
+													<th class="hasinput" style="width:9%">
+														<input type="text" class="form-control" placeholder="Filter =" />
+													</th>
+													<th class="hasinput" style="width:9%">
+														<input type="text" class="form-control" placeholder="Filter =" />
+													</th>
+													<th class="hasinput" style="width:9%">
+														<input type="text" class="form-control" placeholder="Filter =" />
+													</th>
+													<th class="hasinput" style="width:9%">
+														<input type="text" class="form-control" placeholder="Filter =" />
+													</th>
+												</tr>
+									            <tr>
+									            	<th data-class="expand">Create Build Plan</th>
+								                    <th data-class="expand">Company Name</th>
+								                    <th data-class="expand">Project Name</th>
+								                    <th data-class="expand">Company Symbol</th>
+								                    <th data-class="expand">Trading Currency</th>
+								                    <th data-class="expand">Sedar Link</th>								                    
+								                    <th data-class="expand">Company Link</th>
+								                    <th data-class="expand">Stock Issued</th>
+								                    <th data-class="expand">Diluted</th>
+								                    <th data-class="expand">People</th>
+								                    <th data-class="expand">Country</th>								                    
+									            </tr>
+									        </thead>
+				
+									        <tbody>
+												 <tr th:each="project : ${allProjects}">
+													<td> <a th:text="'Create Build Plan'" th:href="${{'newbuildplan/project/'  + project.projectId + '/company/' + project.company.companyId}}"> ERROR - Create Build Plan Link </a> </td>	
+											     	<td th:text="${{project.company.fullName}}">ERROR - Company Name</td>
+											        <td th:text="${{project.name}}">ERROR - Project Name</td>
+											     	<td th:text="${{project.company.symbol}}">ERROR - Company Symbol</td>
+											     	<td th:text="${{project.company.currency.currencyCode}}">ERROR - Trading Currency</td>
+											     	<td> <a th:text="${{project.company.sedar}}" th:href="${{project.company.sedar}}"> ERROR - Sedar Link </a> </td> 
+											     	<td th:text="${{project.company.website}}">ERROR - Company Link</td>
+											     	<td th:text="${{project.company.issued}}">ERROR - Stock Issued</td>
+											     	<td th:text="${{project.company.diluted}}">ERROR - Fully Diluted</td>
+											     	<td th:text="${{project.company.people}}">ERROR - People</td>
+											        <td th:text="${{project.country.name}}">ERROR - Country</td>											        
+											     </tr>								        
+									        </tbody>
+									
+										</table>
+				
+									</div>
+									<!-- end widget content -->
+				
+								</div>
+								<!-- end widget div -->
+				
+							</div>
+							<!-- end widget -->	                   
+	
+							</article>
+							<!-- WIDGET ARTICLES END -->
+						
+						</div>
+						<!-- end row -->					
+										
+					</section>
+					<!-- end widget grid -->
+
+		</div>
+	
+	
+		<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+		<!-- These scripts should also be provided by the template, if they are specific to this page they should be included below -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script>
+			if (!window.jQuery) {
+				document.write('<script src="../../../js/libs/jquery-2.1.1.min.js" th:src="@{/js/libs/jquery-2.1.1.min.js}"><\/script>');
+			}
+		</script>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<script>
+			if (!window.jQuery.ui) {
+				document.write('<script src="../../../js/libs/jquery-ui-1.10.3.min.js" th:src="@{/js/libs/jquery-ui-1.10.3.min.js}"><\/script>');
+			}
+		</script>			
+		
+		<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
+		<script data-pace-options='{ "restartOnRequestAfter": true }' src="../../../js/plugin/pace/pace.min.js" th:src="@{/js/plugin/pace/pace.min.js}"></script>		
+
+		<!-- IMPORTANT: APP CONFIG -->
+		<script src="../../../js/app.config.js" th:src="@{/js/app.config.js}"></script>
+
+		<!-- BOOTSTRAP JS -->
+		<script src="../../../js/bootstrap/bootstrap.min.js" th:src="@{/js/bootstrap/bootstrap.min.js}" ></script>
+		
+		<!-- SPARKLINES -->
+		<script src="../../../js/plugin/sparkline/jquery.sparkline.min.js" th:src="@{/js/plugin/sparkline/jquery.sparkline.min.js}"></script>
+					
+		<!-- MAIN APP JS FILE -->
+		<script src="../../../js/app.min.js" th:src="@{/js/app.min.js}"></script>
+		
+		<!-- JARVIS WIDGETS -->
+		<script src="../../../js/smartwidgets/jarvis.widget.min.js" th:src="@{/js/smartwidgets/jarvis.widget.min.js}"></script>				
+	
+	
+	<div layout:fragment="script-post-content">
+		
+		<!-- PAGE RELATED PLUGIN(S) -->
+		<script src="../../../js/plugin/datatables/jquery.dataTables.min.js" th:src="@{/js/plugin/datatables/jquery.dataTables.min.js}"></script>
+		<script src="../../../js/plugin/datatables/dataTables.colVis.min.js" th:src="@{/js/plugin/datatables/dataTables.colVis.min.js}"></script>
+		<script src="../../../js/plugin/datatables/dataTables.tableTools.min.js" th:src="@{/js/plugin/datatables/dataTables.tableTools.min.js}" ></script>
+		<script src="../../../js/plugin/datatables/dataTables.bootstrap.min.js" th:src="@{/js/plugin/datatables/dataTables.bootstrap.min.js}"></script>
+		<script src="../../../js/plugin/datatable-responsive/datatables.responsive.min.js" th:src="@{/js/plugin/datatable-responsive/datatables.responsive.min.js}"></script>
+
+		<script type="text/javascript">
+		
+		// DO NOT REMOVE : GLOBAL FUNCTIONS!
+		
+		$(document).ready(function() {
+			
+			pageSetUp();
+			
+			/* // DOM Position key index //
+		
+			l - Length changing (dropdown)
+			f - Filtering input (search)
+			t - The Table! (datatable)
+			i - Information (records)
+			p - Pagination (paging)
+			r - pRocessing 
+			< and > - div elements
+			<"#id" and > - div with an id
+			<"class" and > - div with a class
+			<"#id.class" and > - div with an id and class
+			
+			Also see: http://legacy.datatables.net/usage/features
+			*/	
+			
+			var responsiveHelper_datatable_fixed_column = undefined;
+			
+
+			var breakpointDefinition = {
+				tablet : 1024,
+				phone : 480
+			};
+
+			
+			/* COLUMN FILTER  */
+		    var otable = $('#datatable_fixed_column').DataTable({
+		    	//"bFilter": false,
+		    	//"bInfo": false,
+		    	//"bLengthChange": false
+		    	//"bAutoWidth": false,
+		    	//"bPaginate": false,
+		    	//"bStateSave": true // saves sort state using localStorage
+				"sDom": "<'dt-toolbar'<'col-xs-12 col-sm-6 hidden-xs'f><'col-sm-6 col-xs-12 hidden-xs'<'toolbar'>>r>"+
+						"t"+
+						"<'dt-toolbar-footer'<'col-sm-6 col-xs-12 hidden-xs'i><'col-xs-12 col-sm-6'p>>",
+				"autoWidth" : true,
+				"oLanguage": {
+					"sSearch": '<span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>'
+				},
+				"preDrawCallback" : function() {
+					// Initialize the responsive datatables helper once.
+					if (!responsiveHelper_datatable_fixed_column) {
+						responsiveHelper_datatable_fixed_column = new ResponsiveDatatablesHelper($('#datatable_fixed_column'), breakpointDefinition);
+					}
+				},
+				"rowCallback" : function(nRow) {
+					responsiveHelper_datatable_fixed_column.createExpandIcon(nRow);
+				},
+				"drawCallback" : function(oSettings) {
+					responsiveHelper_datatable_fixed_column.respond();
+				}		
+			
+		    });
+		    
+		    // custom toolbar
+		    $("div.toolbar").html('<div class="text-right"><img src="../../../img/logo.png" th:src="@{/img/logo.png}" alt="SmartAdmin" style="width: 111px; margin-top: 3px; margin-right: 10px;"></div>');
+		    	   
+		    // Apply the filter
+		    $("#datatable_fixed_column thead th input[type=text]").on( 'keyup change', function () {
+		    	
+		        otable
+		            .column( $(this).parent().index()+':visible' )
+		            .search( this.value )
+		            .draw();
+		            
+		    } );
+		    /* END COLUMN FILTER */   	    		
+				
+		
+		})
+
+		</script>
+		
+		
+	</div>		 
+	
+	
+</body>
+</html>

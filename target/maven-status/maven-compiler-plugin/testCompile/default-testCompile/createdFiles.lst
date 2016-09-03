@@ -1,0 +1,7 @@
+au\com\integraltech\ovs\persistence\dao\CompanyRepositoryTest.class
+au\com\integraltech\ovs\test\SpringSecurityRolesIntegrationTest.class
+au\com\integraltech\ovs\spring\ConfigTest.class
+au\com\integraltech\ovs\persistence\model\ProjectTest.class
+au\com\integraltech\ovs\persistence\model\CompanyTest.class
+au\com\integraltech\ovs\test\ChangePasswordLiveTest.class
+au\com\integraltech\ovs\persistence\dao\ProjectRepositoryTest.class

@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Create a build Plan</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>New Build Plan</h1>
+    <form action="#" th:action="@{/builder/result}" th:object="${buildPlanForm}" method="post">
+    	
+    	<p>Company: <input type="text" th:field="*{project.company.fullName}" readonly /></p>
+	    <p>Project: <input type="text" th:field="*{project.name}" readonly /></p>
+	    <!-- Insert builder username? -->
+	    
+	    <!-- Build Plan parameter input -->
+	    
+	    <p>Build Plan Name: <input type="text" th:field="*{buildPlanName}" /></p>
+	    <p>Capital Cost: <input type="text" th:field="*{capitalCost}" /></p>
+	    <p>Capital Cost Note <textarea th:field="*{capitalCostNote}"></textarea> </p>
+	    <p>Estimated Startup Year: <input type="text" th:field="*{estimatedStartupYear}" /></p>
+	    <p>Mine Life: <input type="text" th:field="*{mineLife}" /></p>
+	    <p>Mining Cost: <input type="text" th:field="*{miningCost}" /></p>
+	    <p>Mining Cost Note: <textarea th:field="*{miningCostNote}"></textarea></p>
+	    <p>Mining Rate: <input type="text" th:field="*{miningRate}" /></p>
+	 	<p>Mining Rate Note: <textarea th:field="*{miningRateNote}"></textarea></p>
+	 	<p>Processing Cost: <input type="text" th:field="*{processingCost}" /></p>
+	 	<p>Processing Cost Note: <textarea th:field="*{processingCostNote}"></textarea></p>
+	 	<p>Strip Rate (tonnes/day): <input type="text" th:field="*{stripRate}" /></p>
+	 	<p>Strip Rate Note: <textarea th:field="*{stripRateNote}"></textarea></p>
+	 	<p>Sustaining Cost Life of Mine: <input type="text" th:field="*{sustainingCostLifeOfMine}" /></p>
+	 	<p>Tax Rate <input type="text" th:field="*{taxRate}" /></p>
+	 	<p>Tonnage <input type="text" th:field="*{tonnage}" /></p>
+	 	 	
+	 	<ul th:each= "projectMetal, iterStat : ${projectMetals}" style="list-style-type:none" >
+	 	<li th:text="${'Metal: ' + {projectMetal.metal.name}}"> </li>
+ 		<li >Concentrate Grade <input type="text" th:field="*{concentrateGrade[__${iterStat.index}__]}" /></li>
+ 		<li >Concentrate Transport Cost <input type="text" th:field="*{concentrateTransportCost[__${iterStat.index}__]}" /></li>
+ 		<li >Grade <input type="text" th:field="*{grade[__${iterStat.index}__]}" /></li>
+ 		<li >Concentrate Tonnage <input type="text" th:field="*{metalConcentrateTonnage[__${iterStat.index}__]}" /></li>
+ 		<li >Price <input type="text" th:field="*{price[__${iterStat.index}__]}" /></li>
+	 	</ul>
+	 	 
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+

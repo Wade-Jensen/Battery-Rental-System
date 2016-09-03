@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Create a build Plan</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>New Build Plan</h1>
+    <form action="#" th:action="@{/testForm}" th:object="${testForm}" method="post">
+    
+	    <!--  Commented out placeholders  
+	    
+	    <p>Build Plan Id: <input type="text" th:field="*{buildPlan.buildPlanId}" /></p>
+	    
+	    
+	    
+	    List is complete from buildPlanId to dateUpdated -> after that only relevent ones have
+	    been selected ordered by variable list in model class
+	    
+	    <p>FieldName: <input type="text" th:field="*{buildPlan.field}" /></p>
+	    <p>FieldName: <input type="text" th:field="*{buildPlan.field}" /></p>
+	    <p>FieldName: <input type="text" th:field="*{buildPlan.field}" /></p>
+	    <p>FieldName: <input type="text" th:field="*{buildPlan.field}" /></p>
+	    <p>FieldName: <input type="text" th:field="*{buildPlan.field}" /></p>
+	    <p>FieldName: <input type="text" th:field="*{buildPlan.field}" /></p>
+	    <p>FieldName: <input type="text" th:field="*{buildPlan.field}" /></p>
+	    <p>FieldName: <input type="text" th:field="*{buildPlan.field}" /></p>
+	    <p>FieldName: <input type="text" th:field="*{buildPlan.field}" /></p>
+	    
+	    //-->
+	    
+	    <!--  MAIN  -->
+	    
+	    <p>Build Plan Name: <input type="text" th:field="*{buildPlanName}" /></p>
+	    <p>Build Owner: <input type="text" th:field="*{builder.userName}" readonly /></p> <!-- We need to autofill this based on user id -->
+	    <p>Build Note: <textarea type="text" th:field="*{buildPlanNote}" /></p>
+	   
+	   	   <!-- we wouldn't ever want to actually write this to the database -->
+		<p>Company <select th:field="*{companyId}">  
+  		<option th:each="company : ${allCompanies}" 
+          th:value="${company.companyId}" 
+          th:text="#{${' company.fullName =   ' + company.fullName}}">Company List Dropdown</option>
+		</select>
+		</p>	  
+	   
+	    <p>Project: <select th:field="*{projectId}">
+  		<option th:each="project : ${allProjects}" 
+          th:value="${project.projectId}"
+          th:text="#{${' project.name =   ' + project.name}}">Project List Dropdown</option>
+		</select>
+	    </p>
+	    
+	    <p>Company Trading Currency (AUD,CAD,USD): <input type="text" th:field="*{tradingCurrency}" readonly/></p>
+    
+    	
+    
+    	<p>Tonnage: <input type="text" th:field="*{tonnage}" /></p>
+    	 <!-- We need a metal field visual -->
+    	<p>Startup Year: <input type="text" th:field="*{estStartupYear}" /></p>      
+        <p>Tax Rate (%): <input type="text" th:field="*{taxRate}" /></p>
+        <p>Life of Mine (years): <input type="text" th:field="*{mineLife}" /></p>
+        <p> </p>
+        <p>Mining Cost: <input type="text" th:field="*{miningCost}" /></p>
+        <p>Mining Rate (tonnes/day): <input type="text" th:field="*{miningRate}" /></p>
+        <p>Strip Rate (tonnes/day): <input type="text" th:field="*{stripRate}" /></p>
+        
+        
+        <!-- We need a way of the user being able to add more metals, or the number of metals and 
+        correct number of elements for the user to interact with needs to be -->
+         
+        <p> </p>
+	    <p> </p>
+	    <p>Capital Cost: <input type="text" th:field="*{capCost}" /></p>
+	    <p>Capital Cost Currency: <input type="text" th:field="*{capCostCur}" /></p>
+	    <p>Capital Cost Note: <input type="text" th:field="*{capCostNote}" /></p>
+	    <p>Capital Cost Note Is Public: <input type="text" th:field="*{capCostNoteIsPublic}" /></p>
+	    <p>Capital Cost USD: <input type="text" th:field="*{capCostUsd}" /></p>
+	    	   
+		
+	    <p>Cost Source: <input type="text" th:field="*{costSourceId_}" /></p>
+	    <p>Build Plan Metals Id Fk: <input type="text" th:field="*{buildPlanMetalsIdFk}" readonly /></p>
+	    <p>Build Plan Predecessor Fk: <input type="text" th:field="*{buildPlanPredecessorFk}" readonly /></p>
+	    <p>Build Plan Source Id Fk: <input type="text" th:field="*{buildPlanSourceIdFk}" readonly /></p>
+	    
+	      
+	    <p>Con Transport Cost Currency: <input type="text" th:field="*{conTranCostCur}" /></p>
+	    <!--  We can't currently submit because the date fields need to return a date/timestamp -->
+	    <p>Date Confirmed: <input type="datetime-local" th:field="*{dateConfirmed}" readonly /></p>
+	    <p>Date Created: <input type="datetime-local" th:field="*{dateCreated}" readonly /></p>
+	    <p>Date Last Accessed: <input type="datetime-local" th:field="*{dateLastAccess}" readonly /></p>
+	    <p>Date Posted: <input type="datetime-local" th:field="*{datePosted}" readonly /></p>
+	    <p>date Retired: <input type="datetime-local" th:field="*{dateRetired}" readonly /></p>
+	    <p>Date Updated: <input type="datetime-local" th:field="*{dateUpdated}" readonly /></p>
+		     
+        <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+
