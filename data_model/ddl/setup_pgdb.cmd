@@ -23,6 +23,8 @@ psql --username=postgres -a -d ovs -f hibernate_sequence.sql
 Rem generate schema
 psql --username=postgres -a -d ovs -f ovs.sql
 
+psql --username=postgres -a -d ovs -f batteryRental.sql
+
 Rem change ownership from postgres to ovs
 psql --username=postgres -a -d ovs -f change_owner.sql
 
