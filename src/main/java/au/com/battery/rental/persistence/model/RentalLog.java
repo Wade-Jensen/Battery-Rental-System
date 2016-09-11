@@ -36,7 +36,7 @@ public class RentalLog {
     //Setup Foreign keys
     
     @ManyToOne
-    @JoinColumn(name = "user_id")//Put this on the side of the relationship that owns the foreign key (This is where to put the data)
+    @JoinColumn(name = "battery_user_id")//Put this on the side of the relationship that owns the foreign key (This is where to put the data)
     private BatteryUser batteryUser;
     
     @ManyToOne
