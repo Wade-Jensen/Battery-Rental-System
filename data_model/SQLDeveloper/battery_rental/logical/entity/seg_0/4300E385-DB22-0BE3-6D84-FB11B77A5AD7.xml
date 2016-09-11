@@ -5,7 +5,7 @@
 <generatorID>86FC13E8-FE79-DA9E-1E43-DA8852627386</generatorID>
 <ownerDesignName>battery_rental</ownerDesignName>
 <engineerTo>
-<item key="CC7C91F1-863F-4E79-A311-043DD1C6530E" value="true"/>
+<item key="C7126A4D-8B31-68DB-61E3-B7EF0B801284" value="true"/>
 </engineerTo>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -22,7 +22,7 @@
 <generatorID>873A8CC5-E87C-8BE5-B93F-1A2D86EA4CB8</generatorID>
 <ownerDesignName>battery_rental</ownerDesignName>
 <engineerTo>
-<item key="CC7C91F1-863F-4E79-A311-043DD1C6530E" value="true"/>
+<item key="C7126A4D-8B31-68DB-61E3-B7EF0B801284" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -35,7 +35,7 @@
 <generatorID>E42B8DB9-C336-E64A-99CC-D489AB6773E5</generatorID>
 <ownerDesignName>battery_rental</ownerDesignName>
 <engineerTo>
-<item key="CC7C91F1-863F-4E79-A311-043DD1C6530E" value="true"/>
+<item key="C7126A4D-8B31-68DB-61E3-B7EF0B801284" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -49,7 +49,7 @@
 <generatorID>5507E9C1-D33B-C84A-44CE-94EC1AF7D7EA</generatorID>
 <ownerDesignName>battery_rental</ownerDesignName>
 <engineerTo>
-<item key="CC7C91F1-863F-4E79-A311-043DD1C6530E" value="true"/>
+<item key="C7126A4D-8B31-68DB-61E3-B7EF0B801284" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
@@ -63,12 +63,25 @@
 <generatorID>FC659C74-089C-E1D8-A752-B82508461C6B</generatorID>
 <ownerDesignName>battery_rental</ownerDesignName>
 <engineerTo>
-<item key="CC7C91F1-863F-4E79-A311-043DD1C6530E" value="true"/>
+<item key="C7126A4D-8B31-68DB-61E3-B7EF0B801284" value="true"/>
 </engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="creditid" id="4688E0E1-2E2B-5655-0562-4DBB83DC861A">
+<createdBy>tomhunn</createdBy>
+<createdTime>2016-09-11 05:08:46 UTC</createdTime>
+<ownerDesignName>battery_rental</ownerDesignName>
+<engineerTo>
+<item key="C7126A4D-8B31-68DB-61E3-B7EF0B801284" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
@@ -78,8 +91,9 @@
 <createdTime>2016-09-11 00:29:35 UTC</createdTime>
 <generatorID>6C5035D8-929E-8F22-F89A-9760B5CC034E</generatorID>
 <ownerDesignName>battery_rental</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="CC7C91F1-863F-4E79-A311-043DD1C6530E" value="true"/>
+<item key="C7126A4D-8B31-68DB-61E3-B7EF0B801284" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

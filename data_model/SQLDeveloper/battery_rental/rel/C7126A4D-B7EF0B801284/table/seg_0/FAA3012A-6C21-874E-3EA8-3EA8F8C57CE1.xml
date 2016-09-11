@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FAA3012A-6C21-874E-3EA8-3EA8F8C57CE1" name="machine">
+<createdBy>tomhunn</createdBy>
+<createdTime>2016-09-11 03:25:02 UTC</createdTime>
+<generatorID>5EADAF77-9CC1-1535-5791-64B9C356B0E2</generatorID>
+<ownerDesignName>battery_rental</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="FC1F0598-E024-EDEF-56B7-01D41BF13B8B">
+<createdBy>tomhunn</createdBy>
+<createdTime>2016-09-11 03:25:02 UTC</createdTime>
+<generatorID>54907EAB-4747-8A95-6772-E31BD80013A6</generatorID>
+<ownerDesignName>battery_rental</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gps_location" id="81A3E832-E5EE-83CF-3F52-7215CFA84FC7">
+<createdBy>tomhunn</createdBy>
+<createdTime>2016-09-11 03:25:02 UTC</createdTime>
+<generatorID>4BE272C2-269B-3150-1820-C0210D9B7E5B</generatorID>
+<ownerDesignName>battery_rental</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="text_location" id="EB3FEED3-D49B-9206-702D-F2DD969BF955">
+<createdBy>tomhunn</createdBy>
+<createdTime>2016-09-11 03:25:02 UTC</createdTime>
+<generatorID>0A16E57A-4632-3E2F-2B01-78CCE9C691F6</generatorID>
+<ownerDesignName>battery_rental</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="model_type" id="1688E445-B114-FD26-1F57-9E09A2B5D25B">
+<createdBy>tomhunn</createdBy>
+<createdTime>2016-09-11 03:25:02 UTC</createdTime>
+<generatorID>C7E8DE2B-C023-B4FE-8679-0E50F4B437C8</generatorID>
+<ownerDesignName>battery_rental</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2148D622-15C2-3B4B-D407-39AE4E597E5E" name="machine_PK">
+<createdBy>tomhunn</createdBy>
+<createdTime>2016-09-11 03:25:02 UTC</createdTime>
+<generatorID>F50E6F38-D3BC-D743-E41D-A12FF7C84FC0</generatorID>
+<ownerDesignName>battery_rental</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC1F0598-E024-EDEF-56B7-01D41BF13B8B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
