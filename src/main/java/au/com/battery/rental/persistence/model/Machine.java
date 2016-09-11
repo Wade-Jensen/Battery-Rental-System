@@ -1,6 +1,7 @@
 package au.com.battery.rental.persistence.model;
 
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -15,10 +16,13 @@ public class Machine {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
+    @Column(name="gps_location")
     private Double gpsLocation;
-
+    
+    @Column(name="text_location")
     private String textLocation;
 
+    @Column(name="model_type")
     private String modelType;
     
     // constructor - sets the default values

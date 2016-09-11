@@ -3,6 +3,7 @@ package au.com.battery.rental.persistence.model;
 
 import java.sql.Timestamp;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -12,7 +13,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="rental_log")
+@Table(name="battery")
 public class Battery {
 
     @Id
@@ -21,13 +22,17 @@ public class Battery {
 
     private Double soc;
     
+    @Column(name="last_updated")
     private Timestamp lastUpdated;
     
-    private Boolean avaliable;
+    @Column(name="available")
+    private Boolean available;
     
+    @Column(name="date_purchased")
     private Timestamp datePurcahased;
     
-    private Timestamp dateReturned;
+    @Column(name="date_retired")
+    private Timestamp dateRetired;
     
     //Setup Foreign keys
     
@@ -67,12 +72,12 @@ public class Battery {
 		this.lastUpdated = lastUpdated;
 	}
 
-	public Boolean getAvaliable() {
-		return avaliable;
+	public Boolean getavailable() {
+		return available;
 	}
 
-	public void setAvaliable(Boolean avaliable) {
-		this.avaliable = avaliable;
+	public void setavailable(Boolean available) {
+		this.available = available;
 	}
 
 	public Timestamp getDatePurcahased() {
@@ -83,12 +88,21 @@ public class Battery {
 		this.datePurcahased = datePurcahased;
 	}
 
-	public Timestamp getDateReturned() {
-		return dateReturned;
+
+	public Boolean getAvailable() {
+		return available;
 	}
 
-	public void setDateReturned(Timestamp dateReturned) {
-		this.dateReturned = dateReturned;
+	public void setAvailable(Boolean available) {
+		this.available = available;
+	}
+
+	public Timestamp getDateRetired() {
+		return dateRetired;
+	}
+
+	public void setDateRetired(Timestamp dateRetired) {
+		this.dateRetired = dateRetired;
 	}
 
 	public Machine getMachine() {

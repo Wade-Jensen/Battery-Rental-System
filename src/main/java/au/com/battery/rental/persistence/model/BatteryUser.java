@@ -15,6 +15,8 @@ public class BatteryUser {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
+    private String cardId;
+    
     private String firstName;
 
     private String lastName;
@@ -61,6 +63,15 @@ public class BatteryUser {
 		this.credit = credit;
 	}
 
+	public String getCardId() {
+		return cardId;
+	}
+
+	public void setCardId(String cardId) {
+		this.cardId = cardId;
+	}
+
+	
     //
 
     

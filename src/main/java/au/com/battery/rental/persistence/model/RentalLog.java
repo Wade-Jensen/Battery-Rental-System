@@ -3,6 +3,7 @@ package au.com.battery.rental.persistence.model;
 
 import java.sql.Timestamp;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -19,13 +20,18 @@ public class RentalLog {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
+    @Column(name="time_rented")
     private Timestamp timeRented;
 
+    @Column(name="time_returned")
     private Timestamp timeReturned;
 
+    @Column(name="initial_charge")
     private Double initialCharge;
     
+    @Column(name="final_charge")
     private Double finalCharge;
+    
 
     //Setup Foreign keys
     
@@ -111,8 +117,7 @@ public class RentalLog {
 	public void setBattery(Battery battery) {
 		this.battery = battery;
 	}
-    
-	
+
     
     //
 
