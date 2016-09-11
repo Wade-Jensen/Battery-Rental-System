@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="battery_rental" id="6CB4AB4A-9D05-F097-9353-22DF3DF252E1" version="3.5">
+<createdBy>tomhunn</createdBy>
+<createdTime>2016-09-10 23:45:32 UTC</createdTime>
+<ownerDesignName>battery_rental</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>6CB4AB4A-9D05-F097-9353-22DF3DF252E1</designId>
+</OSDM_Design>

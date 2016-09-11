@@ -1,0 +1,5 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="0E040763-23AF-165D-0275-6BBFD06AD919" name="TABLE_2" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="CC7C91F1-863F-4E79-A311-043DD1C6530E" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="86FC13E8-FE79-DA9E-1E43-DA8852627386" name="battery_user" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="CC7C91F1-863F-4E79-A311-043DD1C6530E" propertySourceId="" propertyTargetId=""/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

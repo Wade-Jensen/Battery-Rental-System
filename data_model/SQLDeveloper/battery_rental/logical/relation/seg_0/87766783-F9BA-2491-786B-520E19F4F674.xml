@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="machine_id_fk" directorySegmentName="seg_0" id="87766783-F9BA-2491-786B-520E19F4F674">
+<createdBy>tomhunn</createdBy>
+<createdTime>2016-09-11 00:55:50 UTC</createdTime>
+<ownerDesignName>battery_rental</ownerDesignName>
+<engineerTo>
+<item key="CC7C91F1-863F-4E79-A311-043DD1C6530E" value="true"/>
+</engineerTo>
+<sourcePk>CD78AA82-CFB1-46F5-5C44-DA048AF9AF23</sourcePk>
+<targetPk>CD78AA82-CFB1-46F5-5C44-DA048AF9AF23</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>5EADAF77-9CC1-1535-5791-64B9C356B0E2</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>EDE1601D-219C-F648-1D97-3543E09EE999</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="86FC13E8-FE79-DA9E-1E43-DA8852627386" name="battery_user">
+<createdBy>tomhunn</createdBy>
+<createdTime>2016-09-11 00:24:03 UTC</createdTime>
+<ownerDesignName>battery_rental</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="873A8CC5-E87C-8BE5-B93F-1A2D86EA4CB8">
+<createdBy>tomhunn</createdBy>
+<createdTime>2016-09-11 00:25:21 UTC</createdTime>
+<ownerDesignName>battery_rental</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="firstname" id="E42B8DB9-C336-E64A-99CC-D489AB6773E5">
+<createdBy>tomhunn</createdBy>
+<createdTime>2016-09-11 00:25:57 UTC</createdTime>
+<ownerDesignName>battery_rental</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lastname" id="5507E9C1-D33B-C84A-44CE-94EC1AF7D7EA">
+<createdBy>tomhunn</createdBy>
+<createdTime>2016-09-11 00:26:07 UTC</createdTime>
+<ownerDesignName>battery_rental</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="credit" id="FC659C74-089C-E1D8-A752-B82508461C6B">
+<createdBy>tomhunn</createdBy>
+<createdTime>2016-09-11 00:26:28 UTC</createdTime>
+<ownerDesignName>battery_rental</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6C5035D8-929E-8F22-F89A-9760B5CC034E" name="user_PK">
+<createdBy>tomhunn</createdBy>
+<createdTime>2016-09-11 00:25:21 UTC</createdTime>
+<ownerDesignName>battery_rental</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="873A8CC5-E87C-8BE5-B93F-1A2D86EA4CB8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
