@@ -25,7 +25,8 @@ CREATE TABLE battery_user
     firstname VARCHAR ,
     lastname  VARCHAR ,
     credit    DOUBLE PRECISION ,
-    cardID    VARCHAR
+    cardID    VARCHAR,
+	loginId   INTEGER
   ) ;
 ALTER TABLE battery_user ADD CONSTRAINT battery_user_PK PRIMARY KEY ( id ) ;
 

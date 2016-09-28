@@ -23,13 +23,25 @@ public class BatteryUser {
 
     private Double credit;
     
+    private Integer loginId;
     
-    // constructor - sets the default values
+    
+
+
+	// constructor - sets the default values
     public BatteryUser(){
     	
     }
     
     // getter and setters
+    
+    public Integer getLoginId() {
+		return loginId;
+	}
+
+	public void setLoginId(Integer loginId) {
+		this.loginId = loginId;
+	}
     
 	public Integer getId() {
 		return id;
