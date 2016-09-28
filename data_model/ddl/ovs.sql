@@ -41,7 +41,8 @@ CREATE TABLE users
     firstname          VARCHAR ,
     lastname           VARCHAR ,
     password           VARCHAR ,
-    tokenexpired       BOOLEAN 
+    tokenexpired       BOOLEAN,
+	username		   VARCHAR
   ) ;
 
   ;

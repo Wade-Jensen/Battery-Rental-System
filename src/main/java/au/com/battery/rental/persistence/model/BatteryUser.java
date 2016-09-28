@@ -24,9 +24,6 @@ public class BatteryUser {
     private Double credit;
     
     private Integer loginId;
-    
-    
-
 
 	// constructor - sets the default values
     public BatteryUser(){
@@ -81,11 +78,6 @@ public class BatteryUser {
 
 	public void setCardId(String cardId) {
 		this.cardId = cardId;
-	}
-
-	
-    //
-
-    
+	}  
 
 }
