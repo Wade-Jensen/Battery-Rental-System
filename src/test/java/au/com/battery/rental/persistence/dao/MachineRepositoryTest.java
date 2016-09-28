@@ -85,7 +85,7 @@ public class MachineRepositoryTest {
 		if (battery != null){
 			batteryRepository.delete(battery);
 		}
-		BatteryUser batteryUser = batteryUserRepository.findByCardId(cardId);
+		BatteryUser batteryUser = batteryUserRepository.findById(batteryUserId);
 		if (batteryUser != null){
 			batteryUserRepository.delete(batteryUser);
 		}
@@ -98,9 +98,9 @@ public class MachineRepositoryTest {
 	@Test
 	public void testMachineWithCrud() {
 		
-		Battery battery = batteryRepository.findByCardId(cardId);
+		Battery battery = batteryRepository.findById(batteryId);
 		Machine machine = machineRepository.findById(machineId);
-		BatteryUser batteryUser = batteryUserRepository.findByCardId(cardId);
+		BatteryUser batteryUser = batteryUserRepository.findById(batteryUserId);
 		RentalLog rentalLog = rentalLogRepository.findById(rentalLogId);
 	
 		//Read
