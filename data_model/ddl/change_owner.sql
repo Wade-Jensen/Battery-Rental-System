@@ -16,9 +16,9 @@ ALTER TABLE public.verificationtoken
   
 ALTER TABLE public.battery
   OWNER TO ovs;
- ALTER TABLE public.batteryUser
+ ALTER TABLE public.battery_user
   OWNER TO ovs;
 ALTER TABLE public.Machine
   OWNER TO ovs;
-ALTER TABLE public.rentalLog
+ALTER TABLE public.rental_log
   OWNER TO ovs;
