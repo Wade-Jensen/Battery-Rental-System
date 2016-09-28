@@ -62,10 +62,15 @@ public class BatteryRepositoryTest {
 	@After
 	public void tearDown(){
 		
-		
+		Battery battery = batteryRepository.findById(batteryId);
+		if (battery != null) {
+			batteryRepository.delete(battery);
+		}
 		
 		Machine machine = machineRepository.findById(machineId);
-		machineRepository.delete(machine);
+		if (machine != null) {
+			machineRepository.delete(machine);
+		}
 	}
     
 
@@ -100,22 +105,4 @@ public class BatteryRepositoryTest {
 		assertEquals(textLocation,readmachine.getTextLocation());
 		
 	}
-	/*
-		Battery battery = new Battery();
-		batteryRepository.saveAndFlush(battery);		
-		
-		// Check it has been read correctly
-		Battery readBattery = batteryRepository.findById(1);
-		
-		//Clear readBattery
-		readBattery = null;
-		
-		// Delete the company and check it has been removed
-		batteryRepository.delete(battery);
-		readBattery = batteryRepository.findById(1);
-		
-		// Company should no longer exist and hence should be null
-		assertEquals(null, readBattery);					
-		
-	}*/
 }

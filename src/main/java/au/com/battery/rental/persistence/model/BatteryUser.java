@@ -25,8 +25,7 @@ public class BatteryUser {
     
     private Integer loginId;
     
-    
-
+    private Integer userId;
 
 	// constructor - sets the default values
     public BatteryUser(){
@@ -84,7 +83,13 @@ public class BatteryUser {
 	}
 
 	
-    //
+	public Integer getUserId() {
+		return userId;
+	}
+
+	public void setUserId(Integer userId) {
+		this.userId = userId;
+	}
 
     
 
