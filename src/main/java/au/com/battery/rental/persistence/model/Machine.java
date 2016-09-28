@@ -16,8 +16,11 @@ public class Machine {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
-    @Column(name="gps_location")
-    private Double gpsLocation;
+    @Column(name="lat")
+    private double lat;
+    
+    @Column(name="lon")
+    private double lon;
     
     @Column(name="text_location")
     private String textLocation;
@@ -40,12 +43,20 @@ public class Machine {
 		this.id = id;
 	}
 
-	public Double getGpsLocation() {
-		return gpsLocation;
+	public double getLat() {
+		return lat;
 	}
 
-	public void setGpsLocation(Double gpsLocation) {
-		this.gpsLocation = gpsLocation;
+	public void setLat(double lat) {
+		this.lat = lat;
+	}
+
+	public double getLon() {
+		return lon;
+	}
+
+	public void setLon(double lon) {
+		this.lon = lon;
 	}
 
 	public String getTextLocation() {

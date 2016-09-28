@@ -12,7 +12,7 @@ CREATE TABLE battery
     machine_id     INTEGER ,
     soc            DOUBLE PRECISION ,
     last_updated   TIMESTAMP ,
-    available      NUMBER ,
+    available      BOOLEAN ,
     date_purchased TIMESTAMP ,
     date_retired   TIMESTAMP
   ) ;

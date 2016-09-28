@@ -41,13 +41,9 @@ CREATE TABLE users
     firstname          VARCHAR ,
     lastname           VARCHAR ,
     password           VARCHAR ,
-    tokenexpired       BOOLEAN  ,
-    builder_builder_id INTEGER 
+    tokenexpired       BOOLEAN 
   ) ;
-CREATE UNIQUE INDEX users__IDX ON users
-  (
-    builder_builder_id ASC
-  )
+
   ;
 ALTER TABLE users ADD CONSTRAINT users_PK PRIMARY KEY ( id ) ;
 
