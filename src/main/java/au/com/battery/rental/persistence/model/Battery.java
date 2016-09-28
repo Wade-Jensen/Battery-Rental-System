@@ -3,6 +3,7 @@ package au.com.battery.rental.persistence.model;
 
 import java.sql.Timestamp;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -36,7 +37,7 @@ public class Battery {
     
     //Setup Foreign keys
     
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "machine_id")//Put this on the side of the relationship that owns the foreign key (This is where to put the data)
     private Machine machine;
 

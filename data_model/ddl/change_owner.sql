@@ -12,3 +12,13 @@ ALTER TABLE public.users_roles
   OWNER TO ovs;
 ALTER TABLE public.verificationtoken
   OWNER TO ovs;
+
+  
+ALTER TABLE public.battery
+  OWNER TO ovs;
+ ALTER TABLE public.batteryUser
+  OWNER TO ovs;
+ALTER TABLE public.Machine
+  OWNER TO ovs;
+ALTER TABLE public.rentalLog
+  OWNER TO ovs;
