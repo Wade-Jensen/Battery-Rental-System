@@ -2,6 +2,7 @@ package au.com.battery.rental.persistence.dao;
 
 import static org.junit.Assert.*;
 
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -11,11 +12,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.support.AnnotationConfigContextLoader;
 
-import au.com.battery.rental.persistence.dao.MachineRepository;
-import au.com.battery.rental.persistence.model.Battery;
-import au.com.battery.rental.persistence.model.BatteryUser;
 import au.com.battery.rental.persistence.model.Machine;
-import au.com.battery.rental.persistence.model.RentalLog;
 import au.com.battery.rental.spring.ConfigTest;
 import au.com.battery.rental.spring.PersistenceJPAConfig;
 
@@ -24,110 +21,76 @@ import au.com.battery.rental.spring.PersistenceJPAConfig;
 public class MachineRepositoryTest {
 	
 	// Member variable values for assertions
-	
-		//Battery
-	private Integer batteryId;
-	private Double soc = 2.5;
-		//Battery User
-	private Integer batteryUserId;
-	private String cardId = "XXXX";
-		//Machine
-	private Integer machineId;
+	private double lat = -27.477356;
+	private double lon = 153.0284231; 
 	private String textLocation = "QUT";
-		//RentalLog
-	private Integer rentalLogId;
-	private Double initialCharge1 = 5.34;
+	private double lat1 = 1;
+	private double lon1 = 1; 
+	private String textLocation1 = "Moon";
 	
-		
+	
+	private Integer machineId;
+
 	//Initialize Repo
 	@Autowired
     private MachineRepository machineRepository;
-	@Autowired
-    private BatteryUserRepository batteryUserRepository;
-	@Autowired
-    private BatteryRepository batteryRepository;
-	@Autowired
-    private RentalLogRepository rentalLogRepository;
 	
-	//---------------Setup Before and after---------------
+	//Setup Before and after
 	@Before
 	public void setUp(){
 		
-	//Setup Machine
+		//Setup Machine
 		Machine machine = new Machine();
 		machine.setTextLocation(textLocation);
-	//Setup Battery
-		Battery battery = new Battery();
-		battery.setSoc(soc);
-	//Setup BatteryUser
-		BatteryUser batteryUser = new BatteryUser();
-		batteryUser.setCardId(cardId);
-	//Setup RentalLog
-		RentalLog rentalLog = new RentalLog();
-		rentalLog.setBattery(battery);
-		rentalLog.setMachine(machine);
-		rentalLog.setBatteryUser(batteryUser);
-		rentalLog.setInitialCharge(initialCharge1);
+		machine.setLon(lon);
+		machine.setLat(lat);
 		
-	machineId = machine.getId();
-	batteryId = battery.getId();
-	batteryUserId = batteryUser.getId();
-	rentalLogId = rentalLog.getId();
+		machineRepository.saveAndFlush(machine);
+		
+		machineId = machine.getId();
 	}
 
 	@After
 	public void tearDown(){
+		
 		Machine machine = machineRepository.findById(machineId);
-		if (machine != null){
+		if (machine != null) {
 			machineRepository.delete(machine);
-		}
-		Battery battery = batteryRepository.findById(batteryId);
-		if (battery != null){
-			batteryRepository.delete(battery);
-		}
-		BatteryUser batteryUser = batteryUserRepository.findById(batteryUserId);
-		if (batteryUser != null){
-			batteryUserRepository.delete(batteryUser);
-		}
-		RentalLog rentalLog = rentalLogRepository.findById(rentalLogId);
-		if (rentalLog != null){
-			rentalLogRepository.delete(rentalLog);
 		}
 	}
     
+
 	@Test
-	public void testMachineWithCrud() {
+	public void testBatteryWithCrud() {
 		
-		Battery battery = batteryRepository.findById(batteryId);
-		Machine machine = machineRepository.findById(machineId);
-		BatteryUser batteryUser = batteryUserRepository.findById(batteryUserId);
-		RentalLog rentalLog = rentalLogRepository.findById(rentalLogId);
+		Machine readMachine1 = machineRepository.findById(machineId);
 	
 		//Read
-		assertEquals(battery,rentalLog.getBattery());
-		assertEquals(machine,rentalLog.getMachine());
-		assertEquals(batteryUser,rentalLog.getBattery());
-		assertEquals(initialCharge1, rentalLog.getInitialCharge());
+		assertEquals(textLocation, readMachine1.getTextLocation());
+		assertEquals(lon, readMachine1.getLon(),1e-6);
+		assertEquals(lat,readMachine1.getLat(),1e-6);
 		
 		//Update
 		
-		rentalLog.setInitialCharge(initialCharge1*2);
-
-		rentalLogRepository.saveAndFlush(rentalLog);
+		readMachine1.setLat(lat1);
+		readMachine1.setLon(lon1);
+		readMachine1.setTextLocation(textLocation1);
 		
+		machineRepository.saveAndFlush(readMachine1);
+			
 		//Test Update
-		
-		RentalLog readRentalLog = rentalLogRepository.findById(rentalLogId);
-		
-		assertEquals(initialCharge1*2,readRentalLog.getInitialCharge(),1e-6);
+		readMachine1 = machineRepository.findById(machineId);
+		assertEquals(lon1,readMachine1.getLon(),1e-6);
+		assertEquals(lat1,readMachine1.getLat(),1e-6);
+		assertEquals(textLocation1, readMachine1.getTextLocation());
 		
 		//Delete
-		rentalLogRepository.delete(readRentalLog);
+		machineRepository.delete(readMachine1);;
+		readMachine1 = machineRepository.findById(machineId);
 		
 		//Test Delete
-		RentalLog readRentalLog2 = rentalLogRepository.findById(rentalLogId);
-		assertEquals(null,readRentalLog2);
+
+		assertEquals(null,readMachine1);
 		
 	}
-
 }
