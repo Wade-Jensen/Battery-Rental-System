@@ -20,7 +20,8 @@ public class Battery {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-
+    
+    @Column(name="soc")
     private Double soc;
     
     @Column(name="last_updated")
@@ -34,6 +35,9 @@ public class Battery {
     
     @Column(name="date_retired")
     private Timestamp dateRetired;
+    
+    @Column(name="slot")
+    private Integer slot;
     
     //Setup Foreign keys
     
@@ -112,6 +116,14 @@ public class Battery {
 
 	public void setMachine(Machine machine) {
 		this.machine = machine;
+	}
+
+	public Integer getSlot() {
+		return slot;
+	}
+
+	public void setSlot(Integer slot) {
+		this.slot = slot;
 	}
 
     

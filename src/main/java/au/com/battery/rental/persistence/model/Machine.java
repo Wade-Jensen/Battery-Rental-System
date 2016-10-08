@@ -1,11 +1,15 @@
 package au.com.battery.rental.persistence.model;
 
 
+import java.util.ArrayList;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -27,6 +31,9 @@ public class Machine {
 
     @Column(name="model_type")
     private String modelType;
+    
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "machine")
+    private ArrayList<Battery> batteries;
     
     // constructor - sets the default values
     public Machine(){
@@ -73,6 +80,14 @@ public class Machine {
 
 	public void setModelType(String modelType) {
 		this.modelType = modelType;
+	}
+
+	public ArrayList<Battery> getBatteries() {
+		return batteries;
+	}
+
+	public void setBatteries(ArrayList<Battery> batteries) {
+		this.batteries = batteries;
 	}
     
     //

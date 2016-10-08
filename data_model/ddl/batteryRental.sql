@@ -14,7 +14,8 @@ CREATE TABLE battery
     last_updated   TIMESTAMP ,
     available      BOOLEAN ,
     date_purchased TIMESTAMP ,
-    date_retired   TIMESTAMP
+    date_retired   TIMESTAMP,
+	slot		   INTEGER
   ) ;
 ALTER TABLE battery ADD CONSTRAINT battery_PK PRIMARY KEY ( id ) ;
 
@@ -25,7 +26,7 @@ CREATE TABLE battery_user
     firstname VARCHAR ,
     lastname  VARCHAR ,
     credit    DOUBLE PRECISION ,
-    cardID    VARCHAR,
+    cardId    VARCHAR,
 	loginId   INTEGER
   ) ;
 ALTER TABLE battery_user ADD CONSTRAINT battery_user_PK PRIMARY KEY ( id ) ;
@@ -37,7 +38,7 @@ CREATE TABLE machine
     lat           DOUBLE PRECISION ,
     lon           DOUBLE PRECISION ,
     text_location VARCHAR ,
-    model_type    VARCHAR
+    model_type    VARCHAR,	
   ) ;
 ALTER TABLE machine ADD CONSTRAINT machine_PK PRIMARY KEY ( id ) ;
 
