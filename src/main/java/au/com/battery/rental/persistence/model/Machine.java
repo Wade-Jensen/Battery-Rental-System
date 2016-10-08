@@ -1,10 +1,9 @@
 package au.com.battery.rental.persistence.model;
 
 
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -37,7 +36,7 @@ public class Machine {
     @Column(name="num_batteries")
     private Integer numBatteries;
     
-    @OneToMany(fetch = FetchType.EAGER, mappedBy = "machine")
+    @OneToMany(fetch = FetchType.LAZY, cascade=CascadeType.PERSIST, mappedBy = "machine")
     private List<Battery> batteries;
     
     // constructor - sets the default values
@@ -93,6 +92,14 @@ public class Machine {
 
 	public void setBatteries(List<Battery> batteries) {
 		this.batteries = batteries;
+	}
+
+	public Integer getNumBatteries() {
+		return numBatteries;
+	}
+
+	public void setNumBatteries(Integer numBatteries) {
+		this.numBatteries = numBatteries;
 	}
     
     //

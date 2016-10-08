@@ -24,7 +24,5 @@ public class TestController {
 		//greeting.setNumBatteries(numBatteries);
 		
 		return greeting;
-	}
-	
-	
+	}	
 }

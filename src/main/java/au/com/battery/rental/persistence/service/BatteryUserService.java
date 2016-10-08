@@ -28,4 +28,16 @@ public class BatteryUserService {
 		return isBalancePositive;
 	}
 	
+	public BatteryUser createNew(String cardId) {
+		
+		BatteryUser batteryUser = new BatteryUser();
+		batteryUser.setCardId(cardId);
+		batteryUser.setCredit(50.00);
+		batteryUser.setFirstName("John");
+		batteryUser.setLastName("Smith");
+		batteryUserRepo.saveAndFlush(batteryUser);
+		
+		return batteryUser;
+	}
+	
 }
