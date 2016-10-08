@@ -1,7 +1,6 @@
 package au.com.battery.rental.persistence.dao;
 
 import static org.junit.Assert.assertEquals;
-
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -13,6 +12,8 @@ import org.springframework.test.context.support.AnnotationConfigContextLoader;
 
 import au.com.battery.rental.persistence.model.BatteryUser;
 import au.com.battery.rental.persistence.model.User;
+import au.com.battery.rental.persistence.dao.BatteryUserRepository;
+import au.com.battery.rental.persistence.model.BatteryUser;
 import au.com.battery.rental.spring.ConfigTest;
 import au.com.battery.rental.spring.PersistenceJPAConfig;
 
@@ -26,29 +27,31 @@ public class BatteryUserRepositoryTest {
 	@Autowired
 	private UserRepository userRepo;
 	
-	// Member variable values for assertions
-	private double credit = 20.45;
-	private String cardId = "0x6458393";
-	
 	private double credit2 = 22.09;
 	private String cardId2 = "0x2352453";
-	
-	private Integer batteryUserId;
 	private Integer userId;
 
 	
 	private String textLocation = "QUT";
-	
 	private String username = "myTestUsername";
 	
 	//Initialize Repo
 	@Autowired
-	private BatteryUserRepository batteryUserRepository;
+	private UserRepository userRepository;
+
+	// Member variable values for assertions
+	private String firstName = "David";
+	private String lastName = "Lindhagen";
+	private String cardId = "XXXX";
+	private double credit = 4.3;
+	private double credit1 = 1.2;
+	
+	private Integer batteryUserId;
 
 	//Initialize Repo
 	@Autowired
-	private UserRepository userRepository;
-
+    private BatteryUserRepository batteryUserRepository;
+	
 	//Setup Before and after
 	@Before
 	public void setUp(){
@@ -84,8 +87,12 @@ public class BatteryUserRepositoryTest {
 		if (user != null) {
 			userRepository.delete(user);
 		}
-	}
 
+		if (batteryUser != null){
+			batteryUserRepository.delete(batteryUser);
+		}
+	}
+    
 
 	@Test
 	public void testBatteryUserWithCrud() {
@@ -101,12 +108,22 @@ public class BatteryUserRepositoryTest {
 		//Update
 		batteryUser.setCardId(cardId2);
 		batteryUser.setCredit(credit2);
+		batteryUser.setFirstName(firstName);
+		batteryUser.setLastName(lastName);
 		batteryUserRepository.saveAndFlush(batteryUser);
+		
+		batteryUserId = batteryUser.getId();
 		
 		//Test Update
 		BatteryUser readBatteryUser = batteryUserRepository.findById(batteryUserId);
 		assertEquals(credit2,readBatteryUser.getCredit(),1e-6);
 		assertEquals(cardId2, readBatteryUser.getCardId());
+		
+		//Test Find by CardID
+		readBatteryUser = batteryUserRepository.findByCardId(cardId2);
+		
+		assertEquals(lastName,readBatteryUser.getLastName());
+		assertEquals(credit2, readBatteryUser.getCredit(),1e-6);
 		
 		//Delete
 		batteryUserRepository.delete(readBatteryUser);
@@ -121,5 +138,4 @@ public class BatteryUserRepositoryTest {
 
 
 
-	
 }
