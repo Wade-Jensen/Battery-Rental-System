@@ -46,6 +46,7 @@ public class SecSecurityConfig extends WebSecurityConfigurerAdapter {
         web.ignoring().antMatchers("/js/**");
         web.ignoring().antMatchers("/fonts/**");
         web.ignoring().antMatchers("/img/**");
+        web.ignoring().antMatchers("/api/**");
     }
 
     @Override

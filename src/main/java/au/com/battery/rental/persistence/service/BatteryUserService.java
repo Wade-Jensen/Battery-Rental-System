@@ -1,10 +1,12 @@
 package au.com.battery.rental.persistence.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import au.com.battery.rental.persistence.dao.BatteryUserRepository;
 import au.com.battery.rental.persistence.model.BatteryUser;
 
+@Service
 public class BatteryUserService {
 	
 	@Autowired
@@ -13,8 +15,7 @@ public class BatteryUserService {
 	public BatteryUser findByCardId(String cardId) {
 		return batteryUserRepo.findByCardId(cardId);
 	}
-	
-	
+
 	public Boolean balanceIsPositive(Integer batteryUserId) {
 		
 		Boolean isBalancePositive = false;
