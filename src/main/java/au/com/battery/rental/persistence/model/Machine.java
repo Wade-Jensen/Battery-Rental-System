@@ -2,6 +2,8 @@ package au.com.battery.rental.persistence.model;
 
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -33,7 +35,7 @@ public class Machine {
     private String modelType;
     
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "machine")
-    private ArrayList<Battery> batteries;
+    private List<Battery> batteries;
     
     // constructor - sets the default values
     public Machine(){
@@ -82,11 +84,11 @@ public class Machine {
 		this.modelType = modelType;
 	}
 
-	public ArrayList<Battery> getBatteries() {
+	public List<Battery> getBatteries() {
 		return batteries;
 	}
 
-	public void setBatteries(ArrayList<Battery> batteries) {
+	public void setBatteries(List<Battery> batteries) {
 		this.batteries = batteries;
 	}
     

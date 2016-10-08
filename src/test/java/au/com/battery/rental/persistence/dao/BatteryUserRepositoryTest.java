@@ -64,7 +64,7 @@ public class BatteryUserRepositoryTest {
 		BatteryUser batteryUser = new BatteryUser();
 		batteryUser.setCredit(credit);
 		batteryUser.setCardId(cardId);
-		batteryUser.setLoginId(userId);
+		batteryUser.setUserId(userId);
 		
 		batteryUserRepository.saveAndFlush(batteryUser);
 		
@@ -96,7 +96,7 @@ public class BatteryUserRepositoryTest {
 		//Read
 		assertEquals(credit,batteryUser.getCredit(),1e-6);
 		assertEquals(cardId, batteryUser.getCardId());
-		assertEquals(user.getId(), batteryUser.getLoginId());
+		assertEquals(user.getId(), batteryUser.getUserId());
 		
 		//Update
 		batteryUser.setCardId(cardId2);

@@ -29,21 +29,6 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="machine_id" id="BE2ED2C7-346D-7A9E-AF0C-48920C6F3819">
-<createdBy>tomhunn</createdBy>
-<createdTime>2016-09-11 00:56:23 UTC</createdTime>
-<generatorID>87766783-F9BA-2491-786B-520E19F4F674</generatorID>
-<ownerDesignName>battery_rental</ownerDesignName>
-<engineerTo>
-<item key="C7126A4D-8B31-68DB-61E3-B7EF0B801284" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
-<referedAttribute>396884A1-BC27-E66B-DBC1-0AC14E775C21</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="soc" id="21D7ACAB-DDEF-20BF-F9C5-1953B3254A42">
 <createdBy>tomhunn</createdBy>
 <createdTime>2016-09-11 00:45:19 UTC</createdTime>
@@ -80,8 +65,9 @@
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT006</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="date_purchased" id="1E9AB92B-5044-56A2-EB7F-AD714C262497">
 <createdBy>tomhunn</createdBy>
@@ -109,6 +95,34 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="slot" id="5AB1928E-8AC6-7FA5-6DB3-664EAFE99A2E">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-07 23:21:14 UTC</createdTime>
+<ownerDesignName>battery_rental</ownerDesignName>
+<engineerTo>
+<item key="C7126A4D-8B31-68DB-61E3-B7EF0B801284" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="machine id" id="CE5758AC-D20C-78E0-4209-37D83F3BC25E">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-07 23:34:16 UTC</createdTime>
+<generatorID>87766783-F9BA-2491-786B-520E19F4F674</generatorID>
+<ownerDesignName>battery_rental</ownerDesignName>
+<engineerTo>
+<item key="C7126A4D-8B31-68DB-61E3-B7EF0B801284" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>54907EAB-4747-8A95-6772-E31BD80013A6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

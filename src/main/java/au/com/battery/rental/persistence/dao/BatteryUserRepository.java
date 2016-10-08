@@ -6,5 +6,5 @@ import au.com.battery.rental.persistence.model.BatteryUser;
 public interface BatteryUserRepository extends JpaRepository<BatteryUser, Long>{
 	
 	BatteryUser findById(Integer batteryUserId);
-	BatteryUser findByCardId(Integer cardId);
+	BatteryUser findByCardId(String cardId);
 }

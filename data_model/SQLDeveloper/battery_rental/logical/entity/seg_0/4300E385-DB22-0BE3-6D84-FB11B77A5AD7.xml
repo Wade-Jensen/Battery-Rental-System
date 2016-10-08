@@ -71,7 +71,7 @@
 <logicalDatatype>LOGDT020</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="creditid" id="4688E0E1-2E2B-5655-0562-4DBB83DC861A">
+<Attribute name="card id" id="4688E0E1-2E2B-5655-0562-4DBB83DC861A">
 <createdBy>tomhunn</createdBy>
 <createdTime>2016-09-11 05:08:46 UTC</createdTime>
 <ownerDesignName>battery_rental</ownerDesignName>
@@ -82,6 +82,19 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="user id" id="14F4E599-02F7-4EF4-12B2-02D04CCB0A2E">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-08 00:24:25 UTC</createdTime>
+<ownerDesignName>battery_rental</ownerDesignName>
+<engineerTo>
+<item key="C7126A4D-8B31-68DB-61E3-B7EF0B801284" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

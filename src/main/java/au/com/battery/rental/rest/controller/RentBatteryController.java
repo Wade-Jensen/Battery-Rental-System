@@ -30,11 +30,9 @@ public class RentBatteryController {
 	private MachineService machineService;
 	
 	@RequestMapping("/requestbattery/machineId/{machineId}/cardId/{cardId}/machineSlot/{machineSlot}/timestamp/{timestamp}")
-	public RentalResponse requestBattery(@PathVariable Integer machineId, @PathVariable Id cardId, @PathVariable Integer machineSlot, @PathVariable long timestampMilli) {
+	public RentalResponse requestBattery(@PathVariable Integer machineId, @PathVariable String cardId, @PathVariable Integer machineSlot, @PathVariable long timestampMilli) {
 		
 		Timestamp timestamp = new Timestamp(timestampMilli);
-		
-		// we need to change the card id to be interpreted from a string in HEX
 		
 		RentalResponse rentalResponse = new RentalResponse();
 		
@@ -45,7 +43,7 @@ public class RentBatteryController {
 		rentalResponse.setIsUserBalancePositive( isPositive );
 		
 		Machine machine = machineService.findById(machineId);
-		ArrayList<Battery> batteries = machine.getBatteries();
+		ArrayList<Battery> batteries = new ArrayList<Battery>( machine.getBatteries() );
 		
 		Battery battery = null;
 		for (int i = 0; i< batteries.size(); i++) {
@@ -56,23 +54,21 @@ public class RentBatteryController {
 		if (battery == null) {
 			throw new RuntimeException("Battery has no slot in database");
 		}
-		RentalLog rentalLog = new RentalLog();
-		rentalLog.setBattery(battery);
-		rentalLog.setBatteryUser(batteryUser);
-		rentalLog.setInitialCharge(battery.getSoc());
-		rentalLog.setMachine(null);
-		rentalLog.setTimeRented(timestamp);
+		
+		//if ( battery.getSoc() )
+		
+		//if (Rental)
+			
+		
+		
+		//RentalLog rentalLog = new RentalLog();
+		//rentalLog.setBattery(battery);
+		//rentalLog.setBatteryUser(batteryUser);
+		//rentalLog.setInitialCharge(battery.getSoc());
+		//rentalLog.setMachine(null);
+		//rentalLog.setTimeRented(timestamp);
 		//rentalLog.setTimeReturned( new Timestamp( new Date() ));
 		//rentalLog.setFinalCharge(finalCharge);
-		
-		
-		
-		
-		// Temporary hack //
-		Double batterySoc = 100.00;
-		
-		
-		
 		
 		return new RentalResponse();
 	}

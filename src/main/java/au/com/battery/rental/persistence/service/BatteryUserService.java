@@ -10,7 +10,7 @@ public class BatteryUserService {
 	@Autowired
 	private BatteryUserRepository batteryUserRepo;
 	
-	public BatteryUser findByCardId(Integer cardId) {
+	public BatteryUser findByCardId(String cardId) {
 		return batteryUserRepo.findByCardId(cardId);
 	}
 	

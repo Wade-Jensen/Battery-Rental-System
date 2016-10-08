@@ -1,6 +1,7 @@
 package au.com.battery.rental.persistence.model;
 
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -14,7 +15,8 @@ public class BatteryUser {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-
+    
+    @Column(unique=true, name="card_id")
     private String cardId;
     
     private String firstName;
@@ -23,7 +25,8 @@ public class BatteryUser {
 
     private Double credit;
     
-    private Integer loginId;
+    @Column(name="user_id")
+    private Integer userId;
 
 	// constructor - sets the default values
     public BatteryUser(){
@@ -32,12 +35,12 @@ public class BatteryUser {
     
     // getter and setters
     
-    public Integer getLoginId() {
-		return loginId;
+    public Integer getUserId() {
+		return userId;
 	}
 
-	public void setLoginId(Integer loginId) {
-		this.loginId = loginId;
+	public void setUserId(Integer loginId) {
+		this.userId = loginId;
 	}
     
 	public Integer getId() {

@@ -72,8 +72,6 @@ ALTER TABLE roles_privileges ADD CONSTRAINT roles_privileges_privilege_FK FOREIG
 
 ALTER TABLE roles_privileges ADD CONSTRAINT roles_privileges_role_FK FOREIGN KEY ( role_id ) REFERENCES role ( id ) ;
 
-ALTER TABLE users ADD CONSTRAINT users_builder_FK FOREIGN KEY ( builder_builder_id ) REFERENCES builder ( builder_id ) ;
-
 ALTER TABLE users_roles ADD CONSTRAINT users_roles_role_FK FOREIGN KEY ( role_id ) REFERENCES role ( id ) ;
 
 ALTER TABLE users_roles ADD CONSTRAINT users_roles_users_FK FOREIGN KEY ( users_id ) REFERENCES users ( id ) ;

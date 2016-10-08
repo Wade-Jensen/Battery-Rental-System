@@ -98,7 +98,7 @@ public class MachineRepositoryTest {
 	@Test
 	public void testMachineWithCrud() {
 		
-		Battery battery = batteryRepository.findByCardId(cardId);
+		Battery battery = batteryRepository.findById(batteryId);
 		Machine machine = machineRepository.findById(machineId);
 		BatteryUser batteryUser = batteryUserRepository.findByCardId(cardId);
 		RentalLog rentalLog = rentalLogRepository.findById(rentalLogId);

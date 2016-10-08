@@ -50,7 +50,7 @@ public class BatteryUserTest {
 		batteryUser.setFirstName(firstName);
 		batteryUser.setLastName(lastName);
 		batteryUser.setCredit(credit);
-		batteryUser.setLoginId(loginId);
+		batteryUser.setUserId(loginId);
 		
 		
 		// assert member variable fields are as expected
@@ -59,7 +59,7 @@ public class BatteryUserTest {
 		assertEquals(firstName, batteryUser.getFirstName());
 		assertEquals(lastName, batteryUser.getLastName());
 		assertEquals(credit, batteryUser.getCredit(),1e-6);
-		assertEquals(loginId, batteryUser.getLoginId());
+		assertEquals(loginId, batteryUser.getUserId());
 		
 	}
 	

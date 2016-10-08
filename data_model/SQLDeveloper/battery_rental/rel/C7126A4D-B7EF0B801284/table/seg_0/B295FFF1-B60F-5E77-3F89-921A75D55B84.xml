@@ -1,16 +1,16 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FAA3012A-6C21-874E-3EA8-3EA8F8C57CE1" name="machine">
-<createdBy>tomhunn</createdBy>
-<createdTime>2016-09-11 03:25:02 UTC</createdTime>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B295FFF1-B60F-5E77-3F89-921A75D55B84" name="machine">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-08 00:30:59 UTC</createdTime>
 <generatorID>5EADAF77-9CC1-1535-5791-64B9C356B0E2</generatorID>
 <ownerDesignName>battery_rental</ownerDesignName>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="id" id="FC1F0598-E024-EDEF-56B7-01D41BF13B8B">
-<createdBy>tomhunn</createdBy>
-<createdTime>2016-09-11 03:25:02 UTC</createdTime>
+<Column name="id" id="F5ECA21F-0213-8DF0-630F-D105B671A12A">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-08 00:30:59 UTC</createdTime>
 <generatorID>54907EAB-4747-8A95-6772-E31BD80013A6</generatorID>
 <ownerDesignName>battery_rental</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -19,9 +19,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="gps_location" id="81A3E832-E5EE-83CF-3F52-7215CFA84FC7">
-<createdBy>tomhunn</createdBy>
-<createdTime>2016-09-11 03:25:02 UTC</createdTime>
+<Column name="lat" id="173789C4-C1EE-AC5A-E624-EB1867576A76">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-08 00:30:59 UTC</createdTime>
 <generatorID>4BE272C2-269B-3150-1820-C0210D9B7E5B</generatorID>
 <ownerDesignName>battery_rental</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -31,9 +31,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="text_location" id="EB3FEED3-D49B-9206-702D-F2DD969BF955">
-<createdBy>tomhunn</createdBy>
-<createdTime>2016-09-11 03:25:02 UTC</createdTime>
+<Column name="text_location" id="D3BA0331-A9BF-3797-937C-C74CBF769AC6">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-08 00:30:59 UTC</createdTime>
 <generatorID>0A16E57A-4632-3E2F-2B01-78CCE9C691F6</generatorID>
 <ownerDesignName>battery_rental</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -43,9 +43,9 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="model_type" id="1688E445-B114-FD26-1F57-9E09A2B5D25B">
-<createdBy>tomhunn</createdBy>
-<createdTime>2016-09-11 03:25:02 UTC</createdTime>
+<Column name="model_type" id="B5515396-16D2-6BCD-0D9C-0E530B1B335A">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-08 00:30:59 UTC</createdTime>
 <generatorID>C7E8DE2B-C023-B4FE-8679-0E50F4B437C8</generatorID>
 <ownerDesignName>battery_rental</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
@@ -55,18 +55,30 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="lon" id="942198B5-CFFB-5567-D0BA-AE95E97AA189">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-08 00:30:59 UTC</createdTime>
+<generatorID>405063BF-F7FD-DC70-9BAB-8A0301E9BD2E</generatorID>
+<ownerDesignName>battery_rental</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="2148D622-15C2-3B4B-D407-39AE4E597E5E" name="machine_PK">
-<createdBy>tomhunn</createdBy>
-<createdTime>2016-09-11 03:25:02 UTC</createdTime>
+<ind_PK_UK id="E6997A64-1453-0AF3-664F-051C8547572A" name="machine_PK">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-08 00:30:59 UTC</createdTime>
 <generatorID>F50E6F38-D3BC-D743-E41D-A12FF7C84FC0</generatorID>
 <ownerDesignName>battery_rental</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="FC1F0598-E024-EDEF-56B7-01D41BF13B8B"/>
+<colUsage columnID="F5ECA21F-0213-8DF0-630F-D105B671A12A"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

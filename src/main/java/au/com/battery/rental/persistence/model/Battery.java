@@ -33,9 +33,6 @@ public class Battery {
     @Column(name="date_purchased")
     private Timestamp datePurcahased;
     
-    @Column(name="date_retired")
-    private Timestamp dateRetired;
-    
     @Column(name="slot")
     private Integer slot;
     
@@ -100,14 +97,6 @@ public class Battery {
 
 	public void setAvailable(Boolean available) {
 		this.available = available;
-	}
-
-	public Timestamp getDateRetired() {
-		return dateRetired;
-	}
-
-	public void setDateRetired(Timestamp dateRetired) {
-		this.dateRetired = dateRetired;
 	}
 
 	public Machine getMachine() {

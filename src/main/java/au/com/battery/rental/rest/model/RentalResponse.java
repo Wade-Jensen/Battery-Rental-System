@@ -3,6 +3,7 @@ package au.com.battery.rental.rest.model;
 public class RentalResponse {
 	
 	private Boolean isUserBalancePositive;
+	private Double balance;
 	
 	private Boolean releaseBattery;
 	
@@ -17,6 +18,12 @@ public class RentalResponse {
 	}
 	public void setReleaseBattery(Boolean releaseBattery) {
 		this.releaseBattery = releaseBattery;
+	}
+	public Double getBalance() {
+		return balance;
+	}
+	public void setBalance(Double balance) {
+		this.balance = balance;
 	}
 	
 }

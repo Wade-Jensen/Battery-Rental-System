@@ -29,7 +29,7 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="gps_location" id="4BE272C2-269B-3150-1820-C0210D9B7E5B">
+<Attribute name="lat" id="4BE272C2-269B-3150-1820-C0210D9B7E5B">
 <createdBy>tomhunn</createdBy>
 <createdTime>2016-09-11 00:51:26 UTC</createdTime>
 <ownerDesignName>battery_rental</ownerDesignName>
@@ -66,6 +66,19 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="lon" id="405063BF-F7FD-DC70-9BAB-8A0301E9BD2E">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-08 00:30:43 UTC</createdTime>
+<ownerDesignName>battery_rental</ownerDesignName>
+<engineerTo>
+<item key="C7126A4D-8B31-68DB-61E3-B7EF0B801284" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
