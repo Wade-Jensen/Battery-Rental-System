@@ -34,6 +34,9 @@ public class Machine {
     @Column(name="model_type")
     private String modelType;
     
+    @Column(name="num_batteries")
+    private Integer numBatteries;
+    
     @OneToMany(fetch = FetchType.EAGER, mappedBy = "machine")
     private List<Battery> batteries;
     
