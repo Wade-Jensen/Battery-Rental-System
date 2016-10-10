@@ -6,6 +6,7 @@ import java.sql.Timestamp;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -31,16 +32,21 @@ public class Battery {
     private Boolean available;
     
     @Column(name="date_purchased")
-    private Timestamp datePurcahased;
+    private Timestamp datePurchased;
     
     @Column(name="slot")
     private Integer slot;
     
+    @Column(name="charge_current")
+    private Double chargeCurrent;
+    
     //Setup Foreign keys
     
-    @ManyToOne(cascade = CascadeType.PERSIST)
+    @ManyToOne(cascade = CascadeType.PERSIST, fetch = FetchType.LAZY)
     @JoinColumn(name = "machine_id")//Put this on the side of the relationship that owns the foreign key (This is where to put the data)
     private Machine machine;
+    
+
 
     // constructor - sets the default values
     public Battery(){
@@ -49,7 +55,6 @@ public class Battery {
     
     // getter and setters
    
-
 	public Integer getId() {
 		return id;
 	}
@@ -74,20 +79,12 @@ public class Battery {
 		this.lastUpdated = lastUpdated;
 	}
 
-	public Boolean getavailable() {
-		return available;
+	public Timestamp getDatePurchased() {
+		return datePurchased;
 	}
 
-	public void setavailable(Boolean available) {
-		this.available = available;
-	}
-
-	public Timestamp getDatePurcahased() {
-		return datePurcahased;
-	}
-
-	public void setDatePurcahased(Timestamp datePurcahased) {
-		this.datePurcahased = datePurcahased;
+	public void setDatePurchased(Timestamp datePurcahased) {
+		this.datePurchased = datePurcahased;
 	}
 
 

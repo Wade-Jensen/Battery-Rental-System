@@ -6,7 +6,14 @@ public class RentalResponse {
 	private Double balance;
 	
 	private Boolean releaseBattery;
+	private Integer machineSlot;
 	
+	public Integer getMachineSlot() {
+		return machineSlot;
+	}
+	public void setMachineSlot(Integer machineSlot) {
+		this.machineSlot = machineSlot;
+	}
 	public Boolean getIsUserBalancePositive() {
 		return isUserBalancePositive;
 	}

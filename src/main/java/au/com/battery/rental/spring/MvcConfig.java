@@ -29,7 +29,7 @@ import au.com.battery.rental.validation.PasswordMatchesValidator;
 import nz.net.ultraq.thymeleaf.LayoutDialect;
 
 @Configuration
-@ComponentScan(basePackages = { "au.com.battery.rental.web" })
+@ComponentScan(basePackages = { "au.com.battery.rental.web", "au.com.battery.rental.rest" })
 @PropertySource({ "classpath:application.properties" })
 @PropertySource({"classpath:version.properties" })
 @EnableWebMvc

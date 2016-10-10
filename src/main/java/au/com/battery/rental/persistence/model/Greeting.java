@@ -2,10 +2,13 @@ package au.com.battery.rental.persistence.model;
 
 import java.util.Date;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Greeting {
 
 	private String name;
-	private Date date;
+	private long date;
 	private Integer numBatteries;
 	
 	public String getName() {
@@ -14,11 +17,11 @@ public class Greeting {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public Date getDate() {
+	public long getDate() {
 		return date;
 	}
-	public void setDate(Date date) {
-		this.date = date;
+	public void setDate(long l) {
+		this.date = l;
 	}
 	public Integer getNumBatteries() {
 		return numBatteries;

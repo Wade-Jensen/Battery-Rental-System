@@ -15,6 +15,7 @@ import au.com.battery.rental.persistence.model.RentalLog;
 import au.com.battery.rental.persistence.service.BatteryService;
 import au.com.battery.rental.persistence.service.BatteryUserService;
 import au.com.battery.rental.persistence.service.MachineService;
+import au.com.battery.rental.persistence.service.RentalLogService;
 import au.com.battery.rental.rest.model.RentalResponse;
 
 @RestController
@@ -29,48 +30,55 @@ public class RentBatteryController {
 	@Autowired
 	private MachineService machineService;
 	
+	@Autowired
+	private RentalLogService rentalLogService;
+	
 	@RequestMapping("/requestbattery/machineId/{machineId}/cardId/{cardId}/machineSlot/{machineSlot}/timestamp/{timestamp}")
-	public RentalResponse requestBattery(@PathVariable Integer machineId, @PathVariable String cardId, @PathVariable Integer machineSlot, @PathVariable long timestampMilli) {
+	public RentalResponse requestBattery(@PathVariable Integer machineId, @PathVariable String cardId, @PathVariable Integer machineSlot, @PathVariable long timestampSec) {
 		
-		Timestamp timestamp = new Timestamp(timestampMilli);
+		Timestamp timestamp = new Timestamp(timestampSec*1000);
 		
 		RentalResponse rentalResponse = new RentalResponse();
+		// default result is false for release battery
+		rentalResponse.setReleaseBattery(false);
 		
 		BatteryUser batteryUser = batteryUserService.findByCardId(cardId);
+		if (batteryUser == null) {
+			batteryUser = batteryUserService.createNew(cardId);
+		}
 		Boolean isPositive = ( batteryUser.getCredit() > 0 );
 		
 		// tell the response object whether the user has credit in their account
 		rentalResponse.setIsUserBalancePositive( isPositive );
 		
 		Machine machine = machineService.findById(machineId);
+		if ( machine == null ){
+			machineService.createNew(3);
+		}
 		ArrayList<Battery> batteries = new ArrayList<Battery>( machine.getBatteries() );
 		
 		Battery battery = null;
-		for (int i = 0; i< batteries.size(); i++) {
-			if ( batteries.get(i).getSlot() == machineSlot ) {
-				battery = batteries.get(i);
-			}
-		}
-		if (battery == null) {
+		
+		if ( batteries.size() == 0) {
 			throw new RuntimeException("Battery has no slot in database");
 		}
 		
-		//if ( battery.getSoc() )
+		for (int i = 0; i< batteries.size(); i++) {
+			if ( batteries.get(i).getSoc() == 100 ) {
+				battery = batteries.get(i);
+				rentalResponse.setReleaseBattery(true);
+				break;
+			}
+		}
+		if (battery == null) {
+			throw new RuntimeException("No available batteries");
+		}
 		
-		//if (Rental)
-			
+		if ( rentalResponse.getReleaseBattery() == true ) {
+			rentalLogService.createNew( batteryUser, battery, timestamp );
+		}
 		
-		
-		//RentalLog rentalLog = new RentalLog();
-		//rentalLog.setBattery(battery);
-		//rentalLog.setBatteryUser(batteryUser);
-		//rentalLog.setInitialCharge(battery.getSoc());
-		//rentalLog.setMachine(null);
-		//rentalLog.setTimeRented(timestamp);
-		//rentalLog.setTimeReturned( new Timestamp( new Date() ));
-		//rentalLog.setFinalCharge(finalCharge);
-		
-		return new RentalResponse();
+		return rentalResponse;
 	}
 	
 }
