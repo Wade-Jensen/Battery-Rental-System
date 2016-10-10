@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="03C750EB-F84F-A185-9821-D04A58C80546" containerWithKeyObject="CFA26B6F-53BF-94E1-FEA0-DF6FF3CEC835" localFKIndex="F3CB3479-8A19-37D2-F30E-413B7CCDE40B" name="rental_log_battery_user_FK">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-08 11:50:33 UTC</createdTime>
+<generatorID>D3517812-BD94-4ADF-21FB-2A4675629CB9</generatorID>
+<ownerDesignName>battery_rental</ownerDesignName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0A66B61A-4886-5B22-8AC3-07E8A04B8D47</referredTableID>
+<keyObject>E95F2C96-E46B-9484-30D1-CF46A9207C48</keyObject>
+<referredKeyID>E95F2C96-E46B-9484-30D1-CF46A9207C48</referredKeyID>
+<mandatory>false</mandatory>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

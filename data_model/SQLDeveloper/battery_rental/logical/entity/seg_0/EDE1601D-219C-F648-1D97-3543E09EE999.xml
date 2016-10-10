@@ -125,6 +125,19 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="charge_current" id="AB14F18E-D3C9-7B17-B42F-6407C847B24F">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-08 11:49:31 UTC</createdTime>
+<ownerDesignName>battery_rental</ownerDesignName>
+<engineerTo>
+<item key="C7126A4D-8B31-68DB-61E3-B7EF0B801284" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="CD78AA82-CFB1-46F5-5C44-DA048AF9AF23" name="user PK">
