@@ -3,12 +3,14 @@ package au.com.battery.rental.persistence.service;
 import java.sql.Timestamp;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import au.com.battery.rental.persistence.dao.RentalLogRepository;
 import au.com.battery.rental.persistence.model.Battery;
 import au.com.battery.rental.persistence.model.BatteryUser;
 import au.com.battery.rental.persistence.model.RentalLog;
 
+@Service
 public class RentalLogService {
 	
 	@Autowired
