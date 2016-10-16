@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: au.com.integraltech.ovs.persistence.dao.BuildPlanMetalRepositoryTest
--------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.252 sec - in au.com.integraltech.ovs.persistence.dao.BuildPlanMetalRepositoryTest

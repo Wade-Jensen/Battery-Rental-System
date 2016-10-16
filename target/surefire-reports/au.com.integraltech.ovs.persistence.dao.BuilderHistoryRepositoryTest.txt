@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: au.com.integraltech.ovs.persistence.dao.BuilderHistoryRepositoryTest
--------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.554 sec - in au.com.integraltech.ovs.persistence.dao.BuilderHistoryRepositoryTest

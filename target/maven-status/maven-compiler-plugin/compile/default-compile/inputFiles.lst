@@ -1,95 +1,68 @@
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\model\BuildPlan.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\web\controller\NewBuildPlanController.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\web\controller\BuilderController.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\dao\ProjectMetalRepository.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\dao\VerificationTokenRepository.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\security\AuthenticationFailureListener.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\spring\AppConfig.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\validation\ValidEmail.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\validation\UserValidator.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\service\CountryService.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\validation\EmailExistsException.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\dao\CompanyRepository.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\web\error\UserNotFoundException.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\web\model\BuildPlanForm.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\dao\BuilderHistoryRepository.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\service\BuildPlanService.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\dao\BuilderRepository.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\model\Metal.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\dao\CountryRepository.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\validation\EmailValidator.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\dao\BuildPlanPlausibilityRepository.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\test\TestConfig.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\model\BuildPlanPlausibility.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\service\ProjectMetalService.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\web\controller\TestFormController.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\model\BuilderHistory.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\web\error\UserAlreadyExistException.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\model\PasswordResetToken.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\web\controller\GreetingController.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\model\User.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\spring\PersistenceJPAConfig.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\security\CustomAuthenticationFailureHandler.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\web\util\GenericResponse.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\dao\PrivilegeRepository.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\security\AuthenticationSuccessEventListener.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\service\IUserService.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\security\LoginAttemptService.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\validation\PasswordMatches.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\model\Role.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\service\BuildPlanOutputService.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\model\Builder.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\validation\ValidPassword.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\dao\PasswordResetTokenRepository.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\model\BuildPlanRisk.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\model\Project.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\spring\Application.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\service\CompanyFinancialService.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\model\VerificationToken.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\dao\BuildPlanPlausibilityMetalRepository.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\model\Company.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\dao\BuildPlanRepository.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\model\Greeting.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\model\BuildPlanPlausibilityMetal.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\web\model\GenericForm.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\model\BuildPlanMetal.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\service\CompanyService.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\model\ProjectMetal.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\model\Country.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\security\MySimpleUrlAuthenticationSuccessHandler.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\spring\SetupDataLoader.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\dao\RoleRepository.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\dao\MetalRepository.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\model\BuildPlanOutput.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\web\model\TestForm.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\service\MetalService.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\web\error\RestResponseEntityExceptionHandler.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\validation\PasswordConstraintValidator.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\model\CompanyFinancial.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\web\error\InvalidOldPasswordException.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\web\model\WeightMap.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\dao\BuildPlanRiskRepository.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\web\service\BuildPlanFormService.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\web\controller\RegistrationController.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\dao\UserRepository.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\service\BuilderHistoryService.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\dao\ProjectRepository.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\model\Privilege.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\service\BuilderService.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\service\DefaultData.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\dao\BuildPlanOutputRepository.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\registration\OnRegistrationCompleteEvent.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\service\UserDto.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\registration\listener\RegistrationListener.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\model\Currency.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\service\BuildPlanMetalService.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\service\ProjectService.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\dao\BuildPlanMetalRepository.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\validation\PasswordMatchesValidator.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\dao\CurrencyRepository.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\dao\CompanyFinancialRepository.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\model\WeightMap.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\spring\SecSecurityConfig.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\security\MyUserDetailsService.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\spring\MvcConfig.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\main\java\au\com\integraltech\ovs\persistence\service\UserService.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\rest\controller\HeartbeatController.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\security\MySimpleUrlAuthenticationSuccessHandler.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\registration\listener\RegistrationListener.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\persistence\model\PasswordResetToken.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\persistence\dao\RoleRepository.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\persistence\service\RentalLogService.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\security\AuthenticationSuccessEventListener.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\rest\controller\FullChargeController.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\validation\ValidEmail.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\persistence\model\Machine.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\validation\PasswordMatchesValidator.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\persistence\dao\HeartbeatRepository.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\persistence\dao\PasswordResetTokenRepository.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\rest\model\ReturnAcknowledgement.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\spring\MvcConfig.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\persistence\dao\MachineRepository.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\registration\OnRegistrationCompleteEvent.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\spring\SetupDataLoader.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\persistence\model\Role.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\persistence\model\RentalLog.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\spring\PersistenceJPAConfig.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\persistence\model\VerificationToken.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\test\TestConfig.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\validation\EmailValidator.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\web\error\UserAlreadyExistException.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\web\error\UserNotFoundException.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\rest\controller\FullChargeResponse.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\spring\AppConfig.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\security\CustomAuthenticationFailureHandler.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\security\LoginAttemptService.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\rest\controller\TestController.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\spring\Application.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\persistence\dao\PrivilegeRepository.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\persistence\dao\RentalLogRepository.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\persistence\dao\UserRepository.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\persistence\service\MachineService.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\web\controller\RegistrationController.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\persistence\model\Heartbeat.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\persistence\model\Battery.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\rest\controller\InitialiseMachine.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\security\MyUserDetailsService.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\persistence\service\HeartbeatService.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\validation\ValidPassword.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\persistence\model\User.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\rest\model\RentalResponse.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\rest\controller\ReturnBatteryController.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\validation\PasswordConstraintValidator.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\persistence\service\IUserService.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\persistence\dao\BatteryRepository.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\persistence\model\Privilege.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\persistence\model\BatteryUser.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\spring\SecSecurityConfig.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\rest\model\ReturnResponse.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\validation\UserValidator.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\web\error\RestResponseEntityExceptionHandler.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\rest\controller\RentBatteryController.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\validation\EmailExistsException.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\persistence\service\BatteryUserService.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\persistence\dao\VerificationTokenRepository.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\persistence\service\UserDto.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\security\AuthenticationFailureListener.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\persistence\service\BatteryService.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\web\error\InvalidOldPasswordException.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\persistence\dao\BatteryUserRepository.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\web\util\GenericResponse.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\persistence\model\Greeting.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\persistence\service\UserService.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\main\java\au\com\battery\rental\validation\PasswordMatches.java

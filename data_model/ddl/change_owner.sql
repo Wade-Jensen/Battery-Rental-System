@@ -22,3 +22,5 @@ ALTER TABLE public.Machine
   OWNER TO ovs;
 ALTER TABLE public.rental_log
   OWNER TO ovs;
+ALTER TABLE public.heartbeat
+  OWNER TO ovs;

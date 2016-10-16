@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b8fe67cb-1e91-4ae0-bf7a-becd234a44c8" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_model/SQLDeveloper/battery_rental/rel/C7126A4D-B7EF0B801284/foreignkey/seg_0/03C750EB-F84F-A185-9821-D04A58C80546.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_model/SQLDeveloper/battery_rental/rel/C7126A4D-B7EF0B801284/foreignkey/seg_0/62064983-BF7C-DB56-FA74-D856A46C408E.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_model/SQLDeveloper/battery_rental/rel/C7126A4D-B7EF0B801284/foreignkey/seg_0/962009D2-222B-7F95-2B88-5A36A0400AAA.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_model/SQLDeveloper/battery_rental/rel/C7126A4D-B7EF0B801284/foreignkey/seg_0/E45A0D8A-291C-F392-251E-775AD7FE5D64.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_model/SQLDeveloper/battery_rental/rel/C7126A4D-B7EF0B801284/table/seg_0/0A66B61A-4886-5B22-8AC3-07E8A04B8D47.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_model/SQLDeveloper/battery_rental/rel/C7126A4D-B7EF0B801284/table/seg_0/353C30A6-9EE1-B2E2-B99E-F847C517094A.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_model/SQLDeveloper/battery_rental/rel/C7126A4D-B7EF0B801284/table/seg_0/51ABEC7B-BDA2-1676-C28B-33356B0A2377.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/data_model/SQLDeveloper/battery_rental/rel/C7126A4D-B7EF0B801284/table/seg_0/CFA26B6F-53BF-94E1-FEA0-DF6FF3CEC835.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/dao/BuildPlanMetalRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/dao/BuildPlanOutputRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/dao/BuildPlanPlausibilityMetalRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/dao/BuildPlanPlausibilityRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/dao/BuildPlanRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/dao/BuildPlanRiskRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/dao/BuilderHistoryRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/dao/BuilderRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/dao/CompanyFinancialRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/dao/CompanyRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/dao/CountryRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/dao/CurrencyRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/dao/MetalRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/dao/PasswordResetTokenRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/dao/PrivilegeRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/dao/ProjectMetalRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/dao/ProjectRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/dao/RoleRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/dao/UserRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/dao/VerificationTokenRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/model/BuildPlan.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/model/BuildPlanMetal.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/model/BuildPlanOutput.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/model/BuildPlanPlausibility.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/model/BuildPlanPlausibilityMetal.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/model/BuildPlanRisk.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/model/Builder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/model/BuilderHistory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/model/Company.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/model/CompanyFinancial.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/model/Country.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/model/Currency.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/model/Gizmo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/model/GizmoChild.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/model/Greeting.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/model/Metal.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/model/PasswordResetToken.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/model/Privilege.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/model/Project.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/model/ProjectMetal.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/model/Role.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/model/User.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/model/VerificationToken.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/model/WeightMap.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/service/BuildPlanMetalService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/service/BuildPlanOutputService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/service/BuildPlanService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/service/BuilderHistoryService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/service/BuilderService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/service/CompanyFinancialService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/service/CompanyService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/service/CountryService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/service/DefaultData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/service/IUserService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/service/MetalService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/service/ProjectMetalService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/service/ProjectService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/service/UserDto.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/persistence/service/UserService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/registration/OnRegistrationCompleteEvent.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/registration/listener/RegistrationListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/security/AuthenticationFailureListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/security/AuthenticationSuccessEventListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/security/CustomAuthenticationFailureHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/security/LoginAttemptService$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/security/LoginAttemptService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/security/MySimpleUrlAuthenticationSuccessHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/security/MyUserDetailsService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/spring/AppConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/spring/Application.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/spring/MvcConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/spring/PersistenceJPAConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/spring/SecSecurityConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/spring/SetupDataLoader.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/test/TestConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/validation/EmailExistsException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/validation/EmailValidator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/validation/PasswordConstraintValidator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/validation/PasswordMatches.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/validation/PasswordMatchesValidator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/validation/UserValidator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/validation/ValidEmail.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/validation/ValidPassword.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/web/controller/BuilderController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/web/controller/GreetingController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/web/controller/NewBuildPlanController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/web/controller/NewBuildPlanControllerTesting.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/web/controller/RegistrationController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/web/controller/SampleController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/web/controller/TestFormController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/web/error/InvalidOldPasswordException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/web/error/RestResponseEntityExceptionHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/web/error/UserAlreadyExistException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/web/error/UserNotFoundException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/web/model/BuildPlanForm.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/web/model/GenericForm.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/web/model/Ledger.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/web/model/TestForm.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/web/model/WeightMap.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/web/service/BookKeeper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/web/service/BuildPlanFormService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/classes/au/com/integraltech/ovs/web/util/GenericResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/views/builder/builderWizardTesting.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/views/builder/hello.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/dao/BuildPlanMetalRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/dao/BuildPlanOutputRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/dao/BuildPlanPlausibilityMetalRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/dao/BuildPlanPlausibilityRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/dao/BuildPlanRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/dao/BuildPlanRiskRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/dao/BuilderHistoryRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/dao/BuilderRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/dao/CompanyFinancialRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/dao/CompanyRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/dao/CountryRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/dao/CurrencyRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/dao/MetalRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/dao/PasswordResetTokenRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/dao/PrivilegeRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/dao/ProjectMetalRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/dao/ProjectRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/dao/RoleRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/dao/UserRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/dao/VerificationTokenRepository.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/model/BuildPlan.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/model/BuildPlanMetal.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/model/BuildPlanOutput.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/model/BuildPlanPlausibility.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/model/BuildPlanPlausibilityMetal.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/model/BuildPlanRisk.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/model/Builder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/model/BuilderHistory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/model/Company.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/model/CompanyFinancial.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/model/Country.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/model/Currency.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/model/Gizmo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/model/GizmoChild.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/model/Greeting.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/model/Metal.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/model/PasswordResetToken.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/model/Privilege.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/model/Project.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/model/ProjectMetal.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/model/Role.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/model/User.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/model/VerificationToken.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/model/WeightMap.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/service/BuildPlanMetalService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/service/BuildPlanOutputService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/service/BuildPlanService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/service/BuilderHistoryService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/service/BuilderService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/service/CompanyFinancialService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/service/CompanyService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/service/CountryService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/service/DefaultData.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/service/IUserService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/service/MetalService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/service/ProjectMetalService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/service/ProjectService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/service/UserDto.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/persistence/service/UserService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/registration/OnRegistrationCompleteEvent.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/registration/listener/RegistrationListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/security/AuthenticationFailureListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/security/AuthenticationSuccessEventListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/security/CustomAuthenticationFailureHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/security/LoginAttemptService$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/security/LoginAttemptService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/security/MySimpleUrlAuthenticationSuccessHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/security/MyUserDetailsService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/spring/AppConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/spring/Application.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/spring/MvcConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/spring/PersistenceJPAConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/spring/SecSecurityConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/spring/SetupDataLoader.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/test/TestConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/validation/EmailExistsException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/validation/EmailValidator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/validation/PasswordConstraintValidator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/validation/PasswordMatches.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/validation/PasswordMatchesValidator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/validation/UserValidator.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/validation/ValidEmail.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/validation/ValidPassword.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/web/controller/BuilderController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/web/controller/GreetingController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/web/controller/NewBuildPlanController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/web/controller/NewBuildPlanControllerTesting.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/web/controller/RegistrationController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/web/controller/SampleController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/web/controller/TestFormController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/web/error/InvalidOldPasswordException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/web/error/RestResponseEntityExceptionHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/web/error/UserAlreadyExistException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/web/error/UserNotFoundException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/web/model/BuildPlanForm.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/web/model/GenericForm.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/web/model/Ledger.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/web/model/TestForm.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/web/model/WeightMap.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/web/service/BookKeeper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/web/service/BuildPlanFormService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/au/com/integraltech/ovs/web/util/GenericResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/m2e-wtp/web-resources/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-au.com.integraltech.ovs.persistence.dao.BuildPlanMetalRepositoryTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-au.com.integraltech.ovs.persistence.dao.BuildPlanOutputRepositoryTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-au.com.integraltech.ovs.persistence.dao.BuildPlanRepositoryTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-au.com.integraltech.ovs.persistence.dao.BuilderHistoryRepositoryTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-au.com.integraltech.ovs.persistence.dao.BuilderRepositoryTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-au.com.integraltech.ovs.persistence.dao.CompanyRepositoryTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-au.com.integraltech.ovs.persistence.dao.ProjectRepositoryTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-au.com.integraltech.ovs.persistence.model.BuildPlanMetalTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-au.com.integraltech.ovs.persistence.model.BuildPlanOutputTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-au.com.integraltech.ovs.persistence.model.BuildPlanPlausibilityMetalTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-au.com.integraltech.ovs.persistence.model.BuildPlanPlausibilityTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-au.com.integraltech.ovs.persistence.model.BuildPlanRiskTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-au.com.integraltech.ovs.persistence.model.BuildPlanTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-au.com.integraltech.ovs.persistence.model.BuilderHistoryTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-au.com.integraltech.ovs.persistence.model.BuilderTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-au.com.integraltech.ovs.persistence.model.CompanyFinancialTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-au.com.integraltech.ovs.persistence.model.CompanyTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-au.com.integraltech.ovs.persistence.model.CountryTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-au.com.integraltech.ovs.persistence.model.CurrencyTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-au.com.integraltech.ovs.persistence.model.MetalTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-au.com.integraltech.ovs.persistence.model.ProjectMetalTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-au.com.integraltech.ovs.persistence.model.ProjectTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-au.com.integraltech.ovs.web.service.BookKeeperTest.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/au.com.integraltech.ovs.persistence.dao.BuildPlanMetalRepositoryTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/au.com.integraltech.ovs.persistence.dao.BuildPlanOutputRepositoryTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/au.com.integraltech.ovs.persistence.dao.BuildPlanRepositoryTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/au.com.integraltech.ovs.persistence.dao.BuilderHistoryRepositoryTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/au.com.integraltech.ovs.persistence.dao.BuilderRepositoryTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/au.com.integraltech.ovs.persistence.dao.CompanyRepositoryTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/au.com.integraltech.ovs.persistence.dao.ProjectRepositoryTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/au.com.integraltech.ovs.persistence.model.BuildPlanMetalTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/au.com.integraltech.ovs.persistence.model.BuildPlanOutputTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/au.com.integraltech.ovs.persistence.model.BuildPlanPlausibilityMetalTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/au.com.integraltech.ovs.persistence.model.BuildPlanPlausibilityTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/au.com.integraltech.ovs.persistence.model.BuildPlanRiskTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/au.com.integraltech.ovs.persistence.model.BuildPlanTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/au.com.integraltech.ovs.persistence.model.BuilderHistoryTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/au.com.integraltech.ovs.persistence.model.BuilderTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/au.com.integraltech.ovs.persistence.model.CompanyFinancialTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/au.com.integraltech.ovs.persistence.model.CompanyTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/au.com.integraltech.ovs.persistence.model.CountryTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/au.com.integraltech.ovs.persistence.model.CurrencyTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/au.com.integraltech.ovs.persistence.model.MetalTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/au.com.integraltech.ovs.persistence.model.ProjectMetalTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/au.com.integraltech.ovs.persistence.model.ProjectTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/au.com.integraltech.ovs.web.service.BookKeeperTest.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/.gitignore" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/OVS.war" afterPath="$PROJECT_DIR$/target/OVS.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/OVS/img/demo/iphoneview.png" afterPath="$PROJECT_DIR$/target/OVS/img/demo/iphoneview.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/OVS/img/favicon/favicon.ico" afterPath="$PROJECT_DIR$/target/OVS/img/favicon/favicon.ico" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/OVS/img/favicon/favicon.png" afterPath="$PROJECT_DIR$/target/OVS/img/favicon/favicon.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/OVS/img/logo.png" afterPath="$PROJECT_DIR$/target/OVS/img/logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/cobertura/cobertura.ser" afterPath="$PROJECT_DIR$/target/cobertura/cobertura.ser" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/au/com/battery/rental/persistence/model/BatteryTest.class" afterPath="$PROJECT_DIR$/target/test-classes/au/com/battery/rental/persistence/model/BatteryTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/au/com/battery/rental/spring/ConfigTest.class" afterPath="$PROJECT_DIR$/target/test-classes/au/com/battery/rental/spring/ConfigTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/au/com/battery/rental/test/ChangePasswordLiveTest.class" afterPath="$PROJECT_DIR$/target/test-classes/au/com/battery/rental/test/ChangePasswordLiveTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/au/com/battery/rental/test/SpringSecurityRolesIntegrationTest.class" afterPath="$PROJECT_DIR$/target/test-classes/au/com/battery/rental/test/SpringSecurityRolesIntegrationTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_model/SQLDeveloper/battery_rental/logical/Objects.local" afterPath="$PROJECT_DIR$/data_model/SQLDeveloper/battery_rental/logical/Objects.local" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_model/SQLDeveloper/battery_rental/logical/subviews/B8134306-C2A7-B1B8-B227-F4FA92C03C14.xml" afterPath="$PROJECT_DIR$/data_model/SQLDeveloper/battery_rental/logical/subviews/B8134306-C2A7-B1B8-B227-F4FA92C03C14.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_model/SQLDeveloper/battery_rental/mapping/DeletedMap_RMC7126A4D-8B31-68DB-61E3-B7EF0B801284.xml" afterPath="$PROJECT_DIR$/data_model/SQLDeveloper/battery_rental/mapping/DeletedMap_RMC7126A4D-8B31-68DB-61E3-B7EF0B801284.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_model/SQLDeveloper/battery_rental/mapping/ExtendedMap_RMC7126A4D-8B31-68DB-61E3-B7EF0B801284.xml" afterPath="$PROJECT_DIR$/data_model/SQLDeveloper/battery_rental/mapping/ExtendedMap_RMC7126A4D-8B31-68DB-61E3-B7EF0B801284.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_model/SQLDeveloper/battery_rental/rel/C7126A4D-B7EF0B801284/Objects.local" afterPath="$PROJECT_DIR$/data_model/SQLDeveloper/battery_rental/rel/C7126A4D-B7EF0B801284/Objects.local" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_model/SQLDeveloper/battery_rental/rel/C7126A4D-B7EF0B801284/subviews/D0CE47E3-D5B1-280C-0320-462475A62971.xml" afterPath="$PROJECT_DIR$/data_model/SQLDeveloper/battery_rental/rel/C7126A4D-B7EF0B801284/subviews/D0CE47E3-D5B1-280C-0320-462475A62971.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_model/ddl/batteryRental.sql" afterPath="$PROJECT_DIR$/data_model/ddl/batteryRental.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_model/ddl/change_owner.sql" afterPath="$PROJECT_DIR$/data_model/ddl/change_owner.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/au/com/battery/rental/persistence/service/RentalLogService.java" afterPath="$PROJECT_DIR$/src/main/java/au/com/battery/rental/persistence/service/RentalLogService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/au/com/battery/rental/rest/controller/FullChargeController.java" afterPath="$PROJECT_DIR$/src/main/java/au/com/battery/rental/rest/controller/FullChargeController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/au/com/battery/rental/rest/controller/HeartbeatController.java" afterPath="$PROJECT_DIR$/src/main/java/au/com/battery/rental/rest/controller/HeartbeatController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/au/com/battery/rental/rest/controller/RentBatteryController.java" afterPath="$PROJECT_DIR$/src/main/java/au/com/battery/rental/rest/controller/RentBatteryController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/views/layouts/dashboardLayout.html" afterPath="$PROJECT_DIR$/target/OVS/WEB-INF/views/layouts/dashboardLayout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/views/security/login.html" afterPath="$PROJECT_DIR$/target/OVS/WEB-INF/views/security/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/OVS/WEB-INF/views/security/register.html" afterPath="$PROJECT_DIR$/target/OVS/WEB-INF/views/security/register.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/.gitignore" afterPath="$PROJECT_DIR$/target/classes/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/cobertura.properties" afterPath="$PROJECT_DIR$/target/generated-classes/cobertura/cobertura.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/site/cobertura/coverage.xml" afterPath="$PROJECT_DIR$/target/site/cobertura/coverage.xml" />
+    </list>
+    <ignored path="Battery Rental Server.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="Battery Rental Server" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="OVS.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OVS.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1740">
+              <caret line="116" column="33" selection-start-line="116" selection-start-column="33" selection-end-line="116" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="org.eclipse.wst.common.project.facet.core.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.settings/org.eclipse.wst.common.project.facet.core.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="OVS" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="OVS" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Battery Rental Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Battery Rental Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Battery Rental Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Battery Rental Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Battery Rental Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Battery Rental Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Battery Rental Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data_model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Battery Rental Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Battery Rental Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".settings" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b8fe67cb-1e91-4ae0-bf7a-becd234a44c8" name="Default" comment="" />
+      <created>1476316665074</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1476316665074</updated>
+      <workItem from="1476316669547" duration="183000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="183000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42071882" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/OVS.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1740">
+          <caret line="116" column="33" selection-start-line="116" selection-start-column="33" selection-end-line="116" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.settings/org.eclipse.wst.common.project.facet.core.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

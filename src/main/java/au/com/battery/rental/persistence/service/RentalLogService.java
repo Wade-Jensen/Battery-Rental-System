@@ -24,7 +24,7 @@ public class RentalLogService {
 		rentalLog.setInitialCharge(100.00);
 		rentalLog.setMachine(null);
 		rentalLog.setTimeRented(timestamp);
-		rentalLog.setTimeReturned( timestamp );
+		rentalLog.setTimeReturned( null );
 		rentalLog.setFinalCharge(null);
 		
 		return rentalLog;

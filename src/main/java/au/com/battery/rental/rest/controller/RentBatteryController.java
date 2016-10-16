@@ -33,10 +33,10 @@ public class RentBatteryController {
 	@Autowired
 	private RentalLogService rentalLogService;
 	
-	@RequestMapping("/requestbattery/machineId/{machineId}/cardId/{cardId}/machineSlot/{machineSlot}/timestamp/{timestamp}")
-	public RentalResponse requestBattery(@PathVariable Integer machineId, @PathVariable String cardId, @PathVariable Integer machineSlot, @PathVariable long timestampSec) {
+	@RequestMapping("/api/requestbattery/machineId/{machineId}/cardId/{cardId}/time/{time}")  // /machineSlot/{machineSlot}
+	public RentalResponse requestBattery(@PathVariable Integer machineId, @PathVariable String cardId, @PathVariable long time) { // , @PathVariable Integer machineSlot
 		
-		Timestamp timestamp = new Timestamp(timestampSec*1000);
+		Timestamp timestamp = new Timestamp(time*1000);
 		
 		RentalResponse rentalResponse = new RentalResponse();
 		// default result is false for release battery
@@ -50,6 +50,7 @@ public class RentBatteryController {
 		
 		// tell the response object whether the user has credit in their account
 		rentalResponse.setIsUserBalancePositive( isPositive );
+		rentalResponse.setBalance(batteryUser.getCredit());
 		
 		Machine machine = machineService.findById(machineId);
 		if ( machine == null ){
@@ -63,10 +64,12 @@ public class RentBatteryController {
 			throw new RuntimeException("Battery has no slot in database");
 		}
 		
+		// iterate over batteries to and release the first that is charged
 		for (int i = 0; i< batteries.size(); i++) {
 			if ( batteries.get(i).getSoc() == 100 ) {
 				battery = batteries.get(i);
 				rentalResponse.setReleaseBattery(true);
+				rentalResponse.setMachineSlot(i);
 				break;
 			}
 		}

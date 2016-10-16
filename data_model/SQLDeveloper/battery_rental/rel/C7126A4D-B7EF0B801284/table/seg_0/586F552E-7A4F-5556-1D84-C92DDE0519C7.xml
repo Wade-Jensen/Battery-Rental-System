@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="586F552E-7A4F-5556-1D84-C92DDE0519C7" name="battery_user">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-10 11:07:50 UTC</createdTime>
+<generatorID>4300E385-DB22-0BE3-6D84-FB11B77A5AD7</generatorID>
+<ownerDesignName>battery_rental</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="5C71B99B-6F13-2136-ABFF-79A2A4639A8D">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-10 11:07:50 UTC</createdTime>
+<generatorID>8D9B0774-5088-ADE6-F030-34086F12D726</generatorID>
+<ownerDesignName>battery_rental</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="firstname" id="5950B45C-C1E7-8BE7-1C86-1BB45A6846CD">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-10 11:07:50 UTC</createdTime>
+<generatorID>A3713D49-4DCB-7AB5-5953-4C256071691E</generatorID>
+<ownerDesignName>battery_rental</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lastname" id="5E1F577D-AF92-3BE1-6491-7C62DA8B9F05">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-10 11:07:50 UTC</createdTime>
+<generatorID>DCD64B88-87A4-24D4-D5CD-5B27BB46DE40</generatorID>
+<ownerDesignName>battery_rental</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="credit" id="0091596C-76DD-2288-0E06-D36E307EFAA4">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-10 11:07:50 UTC</createdTime>
+<generatorID>6FF85534-FCDB-792C-27C9-8918C5351EA2</generatorID>
+<ownerDesignName>battery_rental</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="card_id" id="F4BE6368-ECCB-778E-E96C-616A339432C4">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-10 11:07:50 UTC</createdTime>
+<generatorID>4688E0E1-2E2B-5655-0562-4DBB83DC861A</generatorID>
+<ownerDesignName>battery_rental</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="user_id" id="80B0E7C9-9178-F9CC-0A0C-F583BA8509F9">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-10 11:07:50 UTC</createdTime>
+<generatorID>14F4E599-02F7-4EF4-12B2-02D04CCB0A2E</generatorID>
+<ownerDesignName>battery_rental</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EE3D4644-BA57-FA1E-78D0-BDBC9FD94C4D" name="battery_user_PK">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-10 11:07:50 UTC</createdTime>
+<generatorID>40589AFA-FAAC-1CA9-E5CC-D5FA7BF7155C</generatorID>
+<ownerDesignName>battery_rental</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C71B99B-6F13-2136-ABFF-79A2A4639A8D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

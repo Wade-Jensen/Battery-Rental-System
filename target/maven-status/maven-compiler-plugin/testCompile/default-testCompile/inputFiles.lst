@@ -1,29 +1,11 @@
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\test\java\au\com\integraltech\ovs\persistence\model\BuildPlanPlausibilityMetalTest.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\test\java\au\com\integraltech\ovs\persistence\dao\BuilderHistoryRepositoryTest.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\test\java\au\com\integraltech\ovs\persistence\model\BuilderHistoryTest.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\test\java\au\com\integraltech\ovs\persistence\model\CompanyFinancialTest.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\test\java\au\com\integraltech\ovs\persistence\dao\BuildPlanMetalRepositoryTest.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\test\java\au\com\integraltech\ovs\persistence\dao\BuildPlanRepositoryTest.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\test\java\au\com\integraltech\ovs\spring\ConfigTest.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\test\java\au\com\integraltech\ovs\persistence\model\BuildPlanOutputTest.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\test\java\au\com\integraltech\ovs\test\ChangePasswordLiveTest.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\test\java\au\com\integraltech\ovs\persistence\model\CompanyTest.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\test\java\au\com\integraltech\ovs\persistence\model\CurrencyTest.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\test\java\au\com\integraltech\ovs\persistence\model\ProjectTest.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\test\java\au\com\integraltech\ovs\persistence\model\ProjectMetalTest.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\test\java\au\com\integraltech\ovs\persistence\model\BuildPlanMetalTest.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\test\java\au\com\integraltech\ovs\persistence\dao\BuildPlanOutputRepositoryTest.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\test\java\au\com\integraltech\ovs\web\service\BuildPlanFormServiceTest.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\test\java\au\com\integraltech\ovs\persistence\dao\BuilderRepositoryTest.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\test\java\au\com\integraltech\ovs\persistence\model\BuildPlanTest.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\test\java\au\com\integraltech\ovs\persistence\model\MetalTest.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\test\java\au\com\integraltech\ovs\persistence\dao\BuildPlanPlausibilityRepositoryTest.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\test\java\au\com\integraltech\ovs\persistence\model\BuilderTest.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\test\java\au\com\integraltech\ovs\persistence\model\BuildPlanRiskTest.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\test\java\au\com\integraltech\ovs\persistence\model\CountryTest.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\test\java\au\com\integraltech\ovs\web\service\BookKeeperTest.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\test\java\au\com\integraltech\ovs\persistence\dao\ProjectRepositoryTest.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\test\java\au\com\integraltech\ovs\persistence\dao\BuildPlanPlausibilityMetalRepositoryTest.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\test\java\au\com\integraltech\ovs\persistence\dao\CompanyRepositoryTest.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\test\java\au\com\integraltech\ovs\persistence\model\BuildPlanPlausibilityTest.java
-C:\Users\WadeJensen\Dropbox\02_Integral\ovs\src\test\java\au\com\integraltech\ovs\test\SpringSecurityRolesIntegrationTest.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\test\java\au\com\battery\rental\persistence\model\MachineTest.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\test\java\au\com\battery\rental\test\SpringSecurityRolesIntegrationTest.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\test\java\au\com\battery\rental\persistence\dao\BatteryRepositoryTest.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\test\java\au\com\battery\rental\persistence\dao\BatteryUserRepositoryTest.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\test\java\au\com\battery\rental\spring\ConfigTest.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\test\java\au\com\battery\rental\persistence\model\RentalLogTest.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\test\java\au\com\battery\rental\persistence\dao\RentalLogRepositoryTest.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\test\java\au\com\battery\rental\persistence\dao\MachineRepositoryTest.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\test\java\au\com\battery\rental\persistence\model\BatteryTest.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\test\java\au\com\battery\rental\test\ChangePasswordLiveTest.java
+C:\Users\WadeJensen\Dropbox\01_EN40\YEAR_3_SEM_2\ENB345\Battery Rental Server\src\test\java\au\com\battery\rental\persistence\model\BatteryUserTest.java
