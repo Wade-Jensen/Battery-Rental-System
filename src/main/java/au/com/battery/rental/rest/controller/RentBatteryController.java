@@ -33,7 +33,7 @@ public class RentBatteryController {
 	@Autowired
 	private RentalLogService rentalLogService;
 	
-	@RequestMapping("/api/requestbattery/machineId/{machineId}/cardId/{cardId}/time/{time}")  // /machineSlot/{machineSlot}
+	@RequestMapping("/api/requestbattery/machineId/{machineId}/machineSlot/{machineSlot}/cardId/{cardId}/time/{time}")  // /
 	public RentalResponse requestBattery(@PathVariable Integer machineId, @PathVariable String cardId, @PathVariable long time) { // , @PathVariable Integer machineSlot
 		
 		Timestamp timestamp = new Timestamp(time*1000);

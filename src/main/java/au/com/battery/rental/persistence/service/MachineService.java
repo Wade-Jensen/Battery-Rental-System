@@ -22,56 +22,108 @@ public class MachineService {
 		return machineRepo.findById(machineId);
 	}
 	
-	public Machine createNew(Integer numSlots) {
+	public Machine createNew(Integer numSlots, String textLocation) {
 		
 		Machine machine = new Machine();
 		machine.setNumBatteries(numSlots);
-		machine.setTextLocation("QUT Gardens Point");
+		machine.setTextLocation(textLocation);
 		machine.setLat(-27.476994);
 		machine.setLon(153.027715);
 		machine.setModelType("Prototype");
 		
 		Timestamp currentTime = new Timestamp( new Date().getTime() );
 		
-		Battery battery0 = new Battery();
-		battery0.setAvailable(true);
-		battery0.setDatePurchased( currentTime );
-		battery0.setLastUpdated( currentTime );
-		battery0.setMachine(machine);
-		battery0.setSlot(1);
-		battery0.setSoc(100.00);
-		
-		Battery battery1 = new Battery();
-		battery1.setAvailable(true);
-		battery1.setDatePurchased( currentTime );
-		battery1.setLastUpdated( currentTime );
-		battery1.setMachine(machine);
-		battery1.setSlot(2);
-		battery1.setSoc(100.00);
-		
-		Battery battery2 = new Battery();
-		battery2.setAvailable(true);
-		battery2.setDatePurchased( currentTime );
-		battery2.setLastUpdated( currentTime );
-		battery2.setMachine(machine);
-		battery2.setSlot(3);
-		battery2.setSoc(100.00);
-		
 		List<Battery> batteries = new ArrayList<Battery>();
-		batteries.add(battery0);
-		batteries.add(battery1);
-		batteries.add(battery2);
+		
+		if( textLocation.compareTo("QUT GP") == 0) {
+			for (int i=0; i<numSlots; i++) {
+				Battery battery = new Battery();
+				battery.setAvailable(false);
+				battery.setDatePurchased( currentTime );
+				battery.setLastUpdated( currentTime );
+				battery.setMachine(machine);
+				battery.setSlot(i);
+				battery.setSoc(0.00);
+				
+				batteries.add(battery);
+			}
+		}
+		else if ( textLocation.compareTo("QUT KG") == 0 ) {
+			for (int i=0; i<numSlots-1; i++) {
+				Battery battery = new Battery();
+				battery.setAvailable(false);
+				battery.setDatePurchased( currentTime );
+				battery.setLastUpdated( currentTime );
+				battery.setMachine(machine);
+				battery.setSlot(i);
+				battery.setSoc(0.00);
+				
+				batteries.add(battery);
+			}
+		}
+		else {
+			for (int i=0; i<numSlots; i++) {
+				Battery battery = new Battery();
+				battery.setAvailable(false);
+				battery.setDatePurchased( currentTime );
+				battery.setLastUpdated( currentTime );
+				battery.setMachine(machine);
+				battery.setSlot(i);
+				battery.setSoc(0.00);
+				
+				batteries.add(battery);
+			}
+		}
 		
 		machine.setBatteries(batteries);
-		
 		machineRepo.saveAndFlush(machine);
 		
-		machine.getBatteries().get(0).setMachine(null);
-		machine.getBatteries().get(1).setMachine(null);
-		machine.getBatteries().get(2).setMachine(null);
+		// prevent recursive JSON object
+		for (int i=0; i<numSlots; i++) {
+			machine.getBatteries().get(i).setMachine(null);
+		}
 		
 		return machine;
 		
+	}
+	
+	public Machine createNew(Integer numSlots) {
+		Machine machine = new Machine();
+		machine.setNumBatteries(numSlots);
+		machine.setTextLocation("Unknown");
+		machine.setLat(-27.476994);
+		machine.setLon(153.027715);
+		machine.setModelType("Prototype");
+		
+		Timestamp currentTime = new Timestamp( new Date().getTime() );
+		
+		List<Battery> batteries = new ArrayList<Battery>();
+		
+		for (int i=0; i<numSlots; i++) {
+			Battery battery = new Battery();
+			battery.setAvailable(false);
+			battery.setDatePurchased( currentTime );
+			battery.setLastUpdated( currentTime );
+			battery.setMachine(machine);
+			battery.setSlot(i);
+			battery.setSoc(0.00);
+			
+			batteries.add(battery);
+		}
+		
+		machine.setBatteries(batteries);
+		machineRepo.saveAndFlush(machine);
+		
+		// prevent recursive JSON object
+		for (int i=0; i<numSlots; i++) {
+			machine.getBatteries().get(i).setMachine(null);
+		}
+		
+		return machine;
+	}
+
+	public void save(Machine machine) {
+		machineRepo.save(machine);
 	}
 	
 }
