@@ -39,7 +39,6 @@ public class BatteryHistory {
 	@Column(name="charge_current")
 	private Double chargeCurrent;
 	
-	
 	public Integer getId() {
 		return id;
 	}

@@ -70,6 +70,10 @@ public class RentBatteryController {
 				battery = batteries.get(i);
 				rentalResponse.setReleaseBattery(true);
 				rentalResponse.setMachineSlot(i);
+				battery.setAvailable(false);
+				machine.getBatteries().set(i, null);
+				batteryService.save(battery);
+				machineService.save(machine);
 				break;
 			}
 		}
@@ -78,7 +82,8 @@ public class RentBatteryController {
 		}
 		
 		if ( rentalResponse.getReleaseBattery() == true ) {
-			rentalLogService.createNew( batteryUser, battery, timestamp );
+			RentalLog rentalLog = rentalLogService.createNew( batteryUser, battery, timestamp );
+			rentalLogService.save(rentalLog);
 		}
 		
 		return rentalResponse;

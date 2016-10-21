@@ -42,26 +42,32 @@ public class FullChargeController {
 
 		// iterate over batteries to find the one in the correct slot
 		for (int i = 0; i < batteries.size(); i++) {
+			response.setMachine(machine);
 			if (batteries.get(i).getSlot() == machineSlot) {
 				battery = batteries.get(i);
 				
 				battery.setAvailable(true);
 				battery.setSoc(100.00);
+				battery.setLastUpdated(new Timestamp(time));
 				
 				batteryService.save(battery);
 				
 				response.setTimeSent(new Timestamp(time));
 				response.setBattery(battery);
-				response.setMachine(machine);
+				
 				response.setMachineSlot(i);
 				response.setTimeReceived( new Timestamp(receivedDate.getTime()));
+				
+				// if we were going to calculate SOC we might do it here
 			}
+			// prevent recursive machines in response JSON object
+			response.getMachine().getBatteries().get(i).setMachine(null);
 		}
 
 		if (battery == null) {
 			throw new RuntimeException("No available batteries");
 		}
-
+		
 		return response;
 	}
 }

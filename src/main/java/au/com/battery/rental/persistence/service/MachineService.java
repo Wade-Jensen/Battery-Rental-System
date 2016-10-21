@@ -27,8 +27,7 @@ public class MachineService {
 		Machine machine = new Machine();
 		machine.setNumBatteries(numSlots);
 		machine.setTextLocation(textLocation);
-		machine.setLat(-27.476994);
-		machine.setLon(153.027715);
+		
 		machine.setModelType("Prototype");
 		
 		Timestamp currentTime = new Timestamp( new Date().getTime() );
@@ -36,6 +35,10 @@ public class MachineService {
 		List<Battery> batteries = new ArrayList<Battery>();
 		
 		if( textLocation.compareTo("QUT GP") == 0) {
+			
+			machine.setLat(-27.476994);
+			machine.setLon(153.027715);
+			
 			for (int i=0; i<numSlots; i++) {
 				Battery battery = new Battery();
 				battery.setAvailable(false);
@@ -49,6 +52,10 @@ public class MachineService {
 			}
 		}
 		else if ( textLocation.compareTo("QUT KG") == 0 ) {
+			 
+			machine.setLat(-27.451660);
+			machine.setLon(153.014774);
+			
 			for (int i=0; i<numSlots-1; i++) {
 				Battery battery = new Battery();
 				battery.setAvailable(false);
