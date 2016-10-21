@@ -4,6 +4,7 @@ import java.util.Date;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 
+@RestController
 public class Live {
 	
 	
