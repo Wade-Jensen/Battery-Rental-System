@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A98644F4-B388-840B-ADF3-D1D7E0590C69" name="battery history">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-20 08:13:17 UTC</createdTime>
+<generatorID>86FC13E8-FE79-DA9E-1E43-DA8852627386</generatorID>
+<ownerDesignName>battery_rental</ownerDesignName>
+<engineerTo>
+<item key="C7126A4D-8B31-68DB-61E3-B7EF0B801284" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="54264D34-CD94-DA0F-DD44-A49B21ABCAC4">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-20 08:13:17 UTC</createdTime>
+<generatorID>873A8CC5-E87C-8BE5-B93F-1A2D86EA4CB8</generatorID>
+<ownerDesignName>battery_rental</ownerDesignName>
+<engineerTo>
+<item key="C7126A4D-8B31-68DB-61E3-B7EF0B801284" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="time_sent" id="DDED710D-CD9F-4779-5AAA-EEECC11DDC30">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-20 08:13:17 UTC</createdTime>
+<generatorID>5507E9C1-D33B-C84A-44CE-94EC1AF7D7EA</generatorID>
+<ownerDesignName>battery_rental</ownerDesignName>
+<engineerTo>
+<item key="C7126A4D-8B31-68DB-61E3-B7EF0B801284" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="time_received" id="F75410C5-B4C6-FE5A-BCE1-BB0105F225B8">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-20 08:13:17 UTC</createdTime>
+<generatorID>FC659C74-089C-E1D8-A752-B82508461C6B</generatorID>
+<ownerDesignName>battery_rental</ownerDesignName>
+<engineerTo>
+<item key="C7126A4D-8B31-68DB-61E3-B7EF0B801284" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="machine_slot" id="A3F4FDAE-1453-C640-F4FA-2894AD7B5DFA">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-20 08:13:17 UTC</createdTime>
+<ownerDesignName>battery_rental</ownerDesignName>
+<engineerTo>
+<item key="C7126A4D-8B31-68DB-61E3-B7EF0B801284" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="charge current" id="1A3B4DF3-4D74-271D-E87B-176CC95DE0C5">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-20 08:13:17 UTC</createdTime>
+<ownerDesignName>battery_rental</ownerDesignName>
+<engineerTo>
+<item key="C7126A4D-8B31-68DB-61E3-B7EF0B801284" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="machine id" id="D9A6E1F3-2102-F9B4-0C9C-65E816F6820B">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-20 08:21:54 UTC</createdTime>
+<generatorID>0EA6F6C0-F740-B55E-B31B-5FB83D53459A</generatorID>
+<ownerDesignName>battery_rental</ownerDesignName>
+<engineerTo>
+<item key="C7126A4D-8B31-68DB-61E3-B7EF0B801284" value="true"/>
+</engineerTo>
+<referedAttribute>54907EAB-4747-8A95-6772-E31BD80013A6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="battery_id" id="A03FB1D8-1B8F-382E-D307-9D01E7DF4422">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-20 08:23:10 UTC</createdTime>
+<generatorID>ADF2D3E8-9D2E-8703-54C9-D0DF38F2E358</generatorID>
+<ownerDesignName>battery_rental</ownerDesignName>
+<engineerTo>
+<item key="C7126A4D-8B31-68DB-61E3-B7EF0B801284" value="true"/>
+</engineerTo>
+<referedAttribute>396884A1-BC27-E66B-DBC1-0AC14E775C21</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="75E043C7-FF01-41A6-5385-08C876299C03" name="user PK">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-20 08:13:17 UTC</createdTime>
+<generatorID>6C5035D8-929E-8F22-F89A-9760B5CC034E</generatorID>
+<ownerDesignName>battery_rental</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="C7126A4D-8B31-68DB-61E3-B7EF0B801284" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>54264D34-CD94-DA0F-DD44-A49B21ABCAC4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -33,7 +33,7 @@ public class RentBatteryController {
 	@Autowired
 	private RentalLogService rentalLogService;
 	
-	@RequestMapping("/api/requestbattery/machineId/{machineId}/cardId/{cardId}/time/{time}")  // /machineSlot/{machineSlot}
+	@RequestMapping("/api/requestbattery/machineId/{machineId}/machineSlot/{machineSlot}/cardId/{cardId}/time/{time}")  // /
 	public RentalResponse requestBattery(@PathVariable Integer machineId, @PathVariable String cardId, @PathVariable long time) { // , @PathVariable Integer machineSlot
 		
 		Timestamp timestamp = new Timestamp(time*1000);
@@ -70,6 +70,10 @@ public class RentBatteryController {
 				battery = batteries.get(i);
 				rentalResponse.setReleaseBattery(true);
 				rentalResponse.setMachineSlot(i);
+				battery.setAvailable(false);
+				machine.getBatteries().set(i, null);
+				batteryService.save(battery);
+				machineService.save(machine);
 				break;
 			}
 		}
@@ -78,7 +82,8 @@ public class RentBatteryController {
 		}
 		
 		if ( rentalResponse.getReleaseBattery() == true ) {
-			rentalLogService.createNew( batteryUser, battery, timestamp );
+			RentalLog rentalLog = rentalLogService.createNew( batteryUser, battery, timestamp );
+			rentalLogService.save(rentalLog);
 		}
 		
 		return rentalResponse;

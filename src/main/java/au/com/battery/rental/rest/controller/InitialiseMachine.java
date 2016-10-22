@@ -15,10 +15,10 @@ public class InitialiseMachine {
 	@Autowired
 	private MachineService machineService;
 	
-	@RequestMapping(value="api/startmachine/numSlots/{numSlots}", method=RequestMethod.GET )
-	public Machine initialiseMachine( @PathVariable Integer numSlots) {
+	@RequestMapping(value="api/startmachine/numSlots/{numSlots}/textlocation/{textLocation}", method=RequestMethod.GET )
+	public Machine initialiseMachine( @PathVariable Integer numSlots, @PathVariable String textLocation) {
 		
-		Machine machine = machineService.createNew(numSlots);
+		Machine machine = machineService.createNew(numSlots, textLocation);
 		//machine.setBatteries(null);
 		return machine;
 	}

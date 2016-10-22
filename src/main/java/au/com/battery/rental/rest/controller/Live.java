@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Live {
 	
-	
 	@RequestMapping(value="/api/alive")
 	public long alive() {
 	

@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5582B1BD-482A-C3BD-4381-5E585BF79D7D" name="battery_history">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-21 00:18:13 UTC</createdTime>
+<generatorID>A98644F4-B388-840B-ADF3-D1D7E0590C69</generatorID>
+<ownerDesignName>battery_rental</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="9C247CE0-C56B-D3EB-15D1-A90DDEA6C9C4">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-21 00:18:13 UTC</createdTime>
+<generatorID>54264D34-CD94-DA0F-DD44-A49B21ABCAC4</generatorID>
+<ownerDesignName>battery_rental</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="time_sent" id="1188F78A-2B4E-A255-D695-CCD49782D9F2">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-21 00:18:13 UTC</createdTime>
+<generatorID>DDED710D-CD9F-4779-5AAA-EEECC11DDC30</generatorID>
+<ownerDesignName>battery_rental</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="time_received" id="CAF0D4D8-B718-1AC9-9A7D-2CFECC5554BF">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-21 00:18:13 UTC</createdTime>
+<generatorID>F75410C5-B4C6-FE5A-BCE1-BB0105F225B8</generatorID>
+<ownerDesignName>battery_rental</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="machine_slot" id="948D3FC9-FCB0-BFA3-C3D2-E8C22F0B527E">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-21 00:18:13 UTC</createdTime>
+<generatorID>A3F4FDAE-1453-C640-F4FA-2894AD7B5DFA</generatorID>
+<ownerDesignName>battery_rental</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="charge_current" id="FA6047BE-7CB4-AF16-3E85-606C1E4362BB">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-21 00:18:13 UTC</createdTime>
+<generatorID>1A3B4DF3-4D74-271D-E87B-176CC95DE0C5</generatorID>
+<ownerDesignName>battery_rental</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT020</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="machine_id" id="68F2B6A7-BECB-A967-498E-2D466E91634A">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-21 00:18:13 UTC</createdTime>
+<generatorID>D9A6E1F3-2102-F9B4-0C9C-65E816F6820B</generatorID>
+<ownerDesignName>battery_rental</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5A0E4B3B-A559-5221-7B53-D92C947B364C" referredColumn="F1BA4E21-8FF7-B4BB-909A-39C74A55B660"/>
+</associations>
+</Column>
+<Column name="battery_id" id="70C3E64C-876E-9B96-8159-3700AEADDEA6">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-21 00:18:13 UTC</createdTime>
+<generatorID>A03FB1D8-1B8F-382E-D307-9D01E7DF4422</generatorID>
+<ownerDesignName>battery_rental</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="51FDAA2C-5095-FDE9-32D9-60D8314D23A0" referredColumn="F8356EDE-37D8-3378-C606-CB428F5146E4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5F97B6E0-31CC-CDD5-2B69-9210491E16EF" name="battery_history_PK">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-21 00:18:13 UTC</createdTime>
+<generatorID>75E043C7-FF01-41A6-5385-08C876299C03</generatorID>
+<ownerDesignName>battery_rental</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9C247CE0-C56B-D3EB-15D1-A90DDEA6C9C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E2E86338-B409-2626-9D6F-E6E90FEC7FA8" name="battery_history_battery_FK">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-21 00:18:13 UTC</createdTime>
+<generatorID>ADF2D3E8-9D2E-8703-54C9-D0DF38F2E358</generatorID>
+<ownerDesignName>battery_rental</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="70C3E64C-876E-9B96-8159-3700AEADDEA6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1146C9D3-24C9-5929-BDA2-205F07FD3409" name="battery_history_machine_FK">
+<createdBy>WadeJensen</createdBy>
+<createdTime>2016-10-21 00:18:13 UTC</createdTime>
+<generatorID>0EA6F6C0-F740-B55E-B31B-5FB83D53459A</generatorID>
+<ownerDesignName>battery_rental</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="68F2B6A7-BECB-A967-498E-2D466E91634A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

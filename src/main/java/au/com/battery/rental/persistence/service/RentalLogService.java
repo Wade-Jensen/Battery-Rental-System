@@ -30,5 +30,9 @@ public class RentalLogService {
 		return rentalLog;
 	}
 	
+	public void save(RentalLog rentalLog) {
+		rentalLogRepo.save(rentalLog);
+	}
+	
 	
 }
