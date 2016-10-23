@@ -15,6 +15,10 @@ public class BatteryUserService {
 	public BatteryUser findByCardId(String cardId) {
 		return batteryUserRepo.findByCardId(cardId);
 	}
+	
+	public void save(BatteryUser batteryUser) {
+		batteryUserRepo.save(batteryUser);
+	}
 
 	public Boolean balanceIsPositive(Integer batteryUserId) {
 		

@@ -28,6 +28,9 @@ psql --username=postgres -a -d ovs -f batteryRental.sql
 Rem change ownership from postgres to ovs
 psql --username=postgres -a -d ovs -f change_owner.sql
 
+Rem add user data
+#psql --username=postgres -a -d ovs -f preset_user.sql
+
 SET PGPASSWORD=
 
 

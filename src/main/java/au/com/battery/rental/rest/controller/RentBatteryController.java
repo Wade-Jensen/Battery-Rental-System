@@ -33,7 +33,7 @@ public class RentBatteryController {
 	@Autowired
 	private RentalLogService rentalLogService;
 	
-	@RequestMapping("/api/requestbattery/machineId/{machineId}/machineSlot/{machineSlot}/cardId/{cardId}/time/{time}")  // /
+	@RequestMapping("api/requestbattery/machineId/{machineId}/machineSlot/{machineSlot}/cardId/{cardId}/time/{time}")  // /
 	public RentalResponse requestBattery(@PathVariable Integer machineId, @PathVariable String cardId, @PathVariable long time) { // , @PathVariable Integer machineSlot
 		
 		Timestamp timestamp = new Timestamp(time*1000);
@@ -78,7 +78,7 @@ public class RentBatteryController {
 			}
 		}
 		if (battery == null) {
-			throw new RuntimeException("No available batteries");
+			rentalResponse.setReleaseBattery(false);
 		}
 		
 		if ( rentalResponse.getReleaseBattery() == true ) {

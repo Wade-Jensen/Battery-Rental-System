@@ -24,7 +24,7 @@ public class FullChargeController {
 	@Autowired
 	private MachineService machineService;
 
-	@RequestMapping(value = "/api/fullcharge/machineId/{machineId}/time/{time}/machineSlot/{machineSlot}")
+	@RequestMapping(value = "api/fullcharge/machineId/{machineId}/time/{time}/machineSlot/{machineSlot}")
 	public BatteryHistory fullCharge(@PathVariable Integer machineId, @PathVariable long time,
 			@PathVariable Integer machineSlot) {
 

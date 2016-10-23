@@ -86,7 +86,7 @@ public class MachineService {
 		machineRepo.saveAndFlush(machine);
 		
 		// prevent recursive JSON object
-		for (int i=0; i<numSlots; i++) {
+		for (int i=0; i<numSlots-1; i++) {
 			machine.getBatteries().get(i).setMachine(null);
 		}
 		
@@ -122,7 +122,7 @@ public class MachineService {
 		machineRepo.saveAndFlush(machine);
 		
 		// prevent recursive JSON object
-		for (int i=0; i<numSlots; i++) {
+		for (int i=0; i<numSlots-1; i++) {
 			machine.getBatteries().get(i).setMachine(null);
 		}
 		
