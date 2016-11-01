@@ -56,7 +56,7 @@ public class MachineService {
 			machine.setLat(-27.451660);
 			machine.setLon(153.014774);
 			
-			for (int i=0; i<numSlots-1; i++) {
+			for (int i=0; i<numSlots; i++) {
 				Battery battery = new Battery();
 				battery.setAvailable(false);
 				battery.setDatePurchased( currentTime );
@@ -67,6 +67,8 @@ public class MachineService {
 				
 				batteries.add(battery);
 			}
+			
+			batteries.set(2, null);
 		}
 		else {
 			for (int i=0; i<numSlots; i++) {
@@ -127,6 +129,10 @@ public class MachineService {
 		}
 		
 		return machine;
+	}
+	
+	public List<Machine> findByTextLocation(String textLocation) {
+		return machineRepo.findByTextLocation(textLocation);
 	}
 
 	public void save(Machine machine) {

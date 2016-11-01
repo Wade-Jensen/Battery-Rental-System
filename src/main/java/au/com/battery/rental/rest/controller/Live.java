@@ -13,6 +13,7 @@ public class Live {
 	
 		Date time = new Date();
 		
+		System.out.println("Pinged by client");
 		return time.getTime();
 	
 	}

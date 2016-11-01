@@ -83,9 +83,12 @@ public class RentBatteryController {
 		
 		if ( rentalResponse.getReleaseBattery() == true ) {
 			RentalLog rentalLog = rentalLogService.createNew( batteryUser, battery, timestamp );
+			rentalLog.setMachine(machine);
 			rentalLogService.save(rentalLog);
 		}
-		
+		if (battery != null) {
+			System.out.println("Renting battery from machine " + machine.getId().toString() + " Location " + machine.getTextLocation() + " from slot " + battery.getSlot().toString());
+		}
 		return rentalResponse;
 	}
 	

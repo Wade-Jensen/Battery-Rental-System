@@ -1,5 +1,7 @@
 package au.com.battery.rental.persistence.service;
 
+import java.util.Random;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -37,8 +39,12 @@ public class BatteryUserService {
 		BatteryUser batteryUser = new BatteryUser();
 		batteryUser.setCardId(cardId);
 		batteryUser.setCredit(50.00);
-		batteryUser.setFirstName("John");
-		batteryUser.setLastName("Smith");
+		
+		Random generator = new Random();
+		
+		Integer random = generator.nextInt(100);
+		
+		batteryUser.setFirstName("User" + random.toString());
 		batteryUserRepo.saveAndFlush(batteryUser);
 		
 		return batteryUser;

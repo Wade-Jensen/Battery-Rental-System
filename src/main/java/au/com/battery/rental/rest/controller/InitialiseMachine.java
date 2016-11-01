@@ -18,8 +18,25 @@ public class InitialiseMachine {
 	@RequestMapping(value="api/startmachine/numSlots/{numSlots}/textlocation/{textLocation}", method=RequestMethod.GET )
 	public Machine initialiseMachine( @PathVariable Integer numSlots, @PathVariable String textLocation) {
 		
-		Machine machine = machineService.createNew(numSlots, textLocation);
+		Machine machine = new Machine();
+		if ( machineService.findByTextLocation(textLocation).size() != 0) {
+			machine = machineService.findByTextLocation(textLocation).get(0);
+		}
+		else {
+			machine = machineService.createNew(numSlots, textLocation);
+		}
+		try {
+			for (int i = 0; i<machine.getBatteries().size(); i++) {
+				machine.getBatteries().get(i).setMachine(null);
+			}
+		} catch (Exception e) {
+			System.out.println("Registering machine " + machine.getId().toString() + " Location " + machine.getTextLocation());
+			return machine;
+		}
+		
 		//machine.setBatteries(null);
+		
+		System.out.println("Registering machine " + machine.getId().toString() + " Location " + machine.getTextLocation());
 		return machine;
 	}
 }

@@ -40,34 +40,32 @@ public class FullChargeController {
 			throw new RuntimeException("Battery has no slot in database");
 		}
 
-		// iterate over batteries to find the one in the correct slot
-		for (int i = 0; i < batteries.size(); i++) {
-			response.setMachine(machine);
-			if (batteries.get(i).getSlot() == machineSlot) {
-				battery = batteries.get(i);
-				
-				battery.setAvailable(true);
-				battery.setSoc(100.00);
-				battery.setLastUpdated(new Timestamp(time));
-				
-				batteryService.save(battery);
-				
-				response.setTimeSent(new Timestamp(time));
-				response.setBattery(battery);
-				
-				response.setMachineSlot(i);
-				response.setTimeReceived( new Timestamp(receivedDate.getTime()));
-				
-				// if we were going to calculate SOC we might do it here
-			}
-			// prevent recursive machines in response JSON object
-			response.getMachine().getBatteries().get(i).setMachine(null);
-		}
-
+		response.setMachine(machine);
+		
+		battery = batteries.get(machineSlot);
+		
+		battery.setAvailable(true);
+		battery.setSoc(100.00);
+		battery.setLastUpdated(new Timestamp(time*1000));
+		battery.setMachine( machine );
+		
+		batteryService.save(battery);
+		
+		response.setTimeSent(new Timestamp(time));
+		response.setBattery(battery);
+		
+		response.setMachineSlot(machineSlot);
+		response.setTimeReceived( new Timestamp(receivedDate.getTime()));
+		// if we were going to calculate SOC we might do it here
+		
+		// prevent recursive machines in response JSON object
+		response.getMachine().setBatteries(null);
+		response.getBattery().setMachine(null);
+		
 		if (battery == null) {
 			throw new RuntimeException("No available batteries");
 		}
-		
+		System.out.println("Battery fully charged at machine " + machine.getId().toString() + " Location " + machine.getTextLocation() + " slot " + battery.getSlot().toString());
 		return response;
 	}
 }

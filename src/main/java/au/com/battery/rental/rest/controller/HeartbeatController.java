@@ -73,23 +73,25 @@ public class HeartbeatController {
 			Battery newBattery = null;
 			try {
 				newBattery =  machine.getBatteries().get(i);
+				newBattery.setMachine(machine);
 			}
 			catch (Exception e) {
 				
-				newBattery = batteryService.createNew(machineId, slotNumber);
+				continue;
+				//newBattery = batteryService.createNew(machineId, slotNumber);
 				
-				if (machine.getBatteries().get(slotNumber) == null) {
-					machine.getBatteries().set(slotNumber, new Battery());
-				}
-				machine.getBatteries().get(slotNumber);
-				machineService.save(machine);
+				//if (machine.getBatteries().get(slotNumber) == null) {
+				//	machine.getBatteries().set(slotNumber, new Battery());
+				//}
+				//machine.getBatteries().get(slotNumber);
+				//machineService.save(machine);
 			}
 			
 			batteryHistory.setBattery( newBattery );
 			batteryHistory.setMachine(machine);
 			batteryHistory.setMachineSlot(slotNumber);
 			batteryHistory.setTimeReceived( new Timestamp(timeReceived) );
-			batteryHistory.setTimeSent( new Timestamp(time));
+			batteryHistory.setTimeSent( new Timestamp(time*1000));
 			batteryHistory.setChargeCurrent(chargeCurrentArray.get(i));
 			
 			batteryHistoryService.save(batteryHistory);
